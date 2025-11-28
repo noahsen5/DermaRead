@@ -1,0 +1,9 @@
+id,patient_id,relative_path,label,subtype,skin_tone,source,license_url,consent,split
+np002_01,np002,non_psoriasis/np002_img1.png,non-psoriasis,healthy,III,synthetic,https://creativecommons.org/licenses/by/4.0/,research_use,train
+np002_02,np002,non_psoriasis/np002_img2.png,non-psoriasis,healthy,III,synthetic,https://creativecommons.org/licenses/by/4.0/,research_use,train
+np001_01,np001,non_psoriasis/np001_img1.png,non-psoriasis,healthy,II,synthetic,https://creativecommons.org/licenses/by/4.0/,research_use,test
+np001_02,np001,non_psoriasis/np001_img2.png,non-psoriasis,healthy,II,synthetic,https://creativecommons.org/licenses/by/4.0/,research_use,test
+ps002_01,ps002,psoriasis/ps002_img1.png,psoriasis,guttate,V,synthetic,https://creativecommons.org/licenses/by/4.0/,research_use,train
+ps002_02,ps002,psoriasis/ps002_img2.png,psoriasis,guttate,V,synthetic,https://creativecommons.org/licenses/by/4.0/,research_use,train
+ps001_01,ps001,psoriasis/ps001_img1.png,psoriasis,plaque,IV,synthetic,https://creativecommons.org/licenses/by/4.0/,research_use,test
+ps001_02,ps001,psoriasis/ps001_img2.png,psoriasis,plaque,IV,synthetic,https://creativecommons.org/licenses/by/4.0/,research_use,test
