@@ -13,5 +13,5 @@ Reduce misdiagnosis on darker skin tones by providing a transparent image-screen
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-python app/app.py
+python DermaRead/app.py
 
