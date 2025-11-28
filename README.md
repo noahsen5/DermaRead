@@ -1,2 +1,2 @@
 # DermaRead
-my comp3000 project which will be an ai to scan skin lesions mainly across diverse skin tones. 
+Reduce misdiagnosis on darker skin tones by providing a transparent image-screening tool (with heatmaps) for psoriasis vs. non-psoriasis.
