@@ -1,0 +1,4 @@
+class,precision,recall,f1_score,support
+non-psoriasis,1.0,1.0,1.0,75.0
+psoriasis,1.0,1.0,1.0,75.0
+weighted_avg,1.0,1.0,1.0,150.0

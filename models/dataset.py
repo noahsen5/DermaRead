@@ -1,27 +1,15 @@
 from pathlib import Path
 
 import pandas as pd
-import torchvision.transforms as T
 from PIL import Image
 from torch.utils.data import Dataset
-
+from models.preprocessing import inference_transform, train_transform
 
 CLASS_NAMES = ["non-psoriasis", "psoriasis"]
 
 
 def _build_transform(split: str):
-    augments = []
-    if split == "train":
-        augments.append(T.RandomHorizontalFlip())
-    augments.extend(
-        [
-            T.Resize(256),
-            T.CenterCrop(224),
-            T.ToTensor(),
-            T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-        ]
-    )
-    return T.Compose(augments)
+    return train_transform if split == "train" else inference_transform
 
 
 class ManifestDataset(Dataset):

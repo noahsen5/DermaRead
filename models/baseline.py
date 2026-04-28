@@ -1,8 +1,9 @@
 from pathlib import Path
 
 from PIL import Image
-import torch, torchvision.transforms as T
+import torch
 from torchvision.models import resnet18
+from models.preprocessing import inference_transform
 
 CLASS_NAMES = ["non-psoriasis", "psoriasis"]
 _ROOT = Path(__file__).resolve().parents[1]
@@ -33,14 +34,8 @@ def load_checkpoint(model, checkpoint_path, map_location="cpu"):
 def load_trained_model(device: str = "cpu"):
     return build_model(weights=None, checkpoint_path=DEFAULT_CHECKPOINT, device=device)
 
-_pre = T.Compose([
-    T.Resize(256), T.CenterCrop(224),
-    T.ToTensor(),
-    T.Normalize([0.485,0.456,0.406],[0.229,0.224,0.225])
-])
-
 def predict_pil(model, pil: Image.Image):
-    x = _pre(pil).unsqueeze(0)
+    x = inference_transform(pil).unsqueeze(0)
     device = next(model.parameters()).device
     x = x.to(device)
     with torch.no_grad():

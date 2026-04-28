@@ -15,21 +15,19 @@ import matplotlib
 import matplotlib.cm as cm
 import numpy as np
 import torch
-import torchvision.transforms as T
 from PIL import Image
-
-
-_PREPROCESS = T.Compose(
-    [
-        T.Resize(256),
-        T.CenterCrop(224),
-        T.ToTensor(),
-        T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-    ]
-)
+from models.preprocessing import inference_transform as _PREPROCESS
 
 
 def _default_layer(model):
+    # ResNet50 uses Bottleneck (conv1/conv2/conv3); ResNet18 uses BasicBlock (conv1/conv2).
+    # Hook the final spatial conv in the last residual block.
+    try:
+        from torchvision.models.resnet import Bottleneck
+        if isinstance(model.layer4[-1], Bottleneck):
+            return model.layer4[-1].conv3
+    except ImportError:
+        pass
     return model.layer4[-1].conv2
 
 

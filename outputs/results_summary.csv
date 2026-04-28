@@ -1,0 +1,4 @@
+model_version,model_name,dataset_size,accuracy,precision,recall,f1,auc,notes
+v2,ResNet50 Transfer,7005,1.0,1.0,1.0,1.0,1.0,
+v3,ResNet50 Balanced (Weighted Loss),7005,1.0,1.0,1.0,1.0,1.0,Inverse-frequency class weights via CrossEntropyLoss(weight=...)
+v1,ResNet18 Baseline,700,1.0,1.0,1.0,1.0,1.0000,

@@ -1,0 +1,39 @@
+{
+  "class_names": [
+    "non-psoriasis",
+    "psoriasis"
+  ],
+  "label_to_index": {
+    "non-psoriasis": 0,
+    "psoriasis": 1
+  },
+  "index_to_label": {
+    "0": "non-psoriasis",
+    "1": "psoriasis"
+  },
+  "preprocessing": {
+    "resize": 256,
+    "crop": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ]
+  },
+  "consistency_check": {
+    "models/baseline.py": "OK",
+    "models/resnet50_model.py": "OK",
+    "models/dataset.py": "OK"
+  },
+  "checkpoint_classes": {
+    "v1": "OK",
+    "v2": "OK",
+    "v3": "OK"
+  },
+  "all_consistent": true
+}
