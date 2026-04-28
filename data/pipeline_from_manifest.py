@@ -1,3 +1,4 @@
+import argparse
 import csv
 import random
 import shutil
@@ -10,6 +11,23 @@ MANIFEST_IN = Path("data/manifest.csv")
 MANIFEST_OUT = Path("data/manifest.split.csv")
 RAW = Path("data/raw")
 PROC = Path("data/processed")
+
+
+def limit_rows(rows, per_label_limit: int | None = None):
+    """Optionally cap how many samples per label are processed to avoid huge runs."""
+    if per_label_limit is None:
+        return rows
+    by_label = defaultdict(list)
+    for r in rows:
+        by_label[r["label"]].append(r)
+    limited = []
+    for label_rows in by_label.values():
+        if len(label_rows) > per_label_limit:
+            limited.extend(random.sample(label_rows, per_label_limit))
+        else:
+            limited.extend(label_rows)
+    random.shuffle(limited)
+    return limited
 
 
 def _patient_bins(n: int, ratios):
@@ -79,8 +97,12 @@ def copy_files(rows):
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy(src, dst)
 
-def main():
+def main(limit_per_label: int | None = None):
     rows = list(csv.DictReader(open(MANIFEST_IN)))
+    rows = limit_rows(rows, per_label_limit=limit_per_label)
+    if not rows:
+        print("No rows to process after applying limits.")
+        return
     rows = stratified_patient_split(rows)
     copy_files(rows)
     with open(MANIFEST_OUT, "w", newline="") as f:
@@ -88,4 +110,12 @@ def main():
     print("Processed to:", PROC)
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser(description="Split manifest and copy limited data.")
+    parser.add_argument(
+        "--limit-per-label",
+        type=int,
+        default=None,
+        help="Maximum number of samples to include per label (e.g. 10).",
+    )
+    args = parser.parse_args()
+    main(limit_per_label=args.limit_per_label)

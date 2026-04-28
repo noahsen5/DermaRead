@@ -5,7 +5,8 @@ import torch, torchvision.transforms as T
 from torchvision.models import resnet18
 
 CLASS_NAMES = ["non-psoriasis", "psoriasis"]
-DEFAULT_CHECKPOINT = Path("models/checkpoints/resnet18_baseline.pt")
+_ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_CHECKPOINT = _ROOT / "models/checkpoints/resnet18_baseline.pt"
 
 
 def build_model(weights=None, checkpoint_path: Path | str | None = None, device: str = "cpu"):
@@ -21,7 +22,7 @@ def load_checkpoint(model, checkpoint_path, map_location="cpu"):
     path = Path(checkpoint_path)
     if not path.is_file():
         raise FileNotFoundError(f"Checkpoint not found: {path}")
-    state = torch.load(path, map_location=map_location)
+    state = torch.load(path, map_location=map_location, weights_only=False)
     if isinstance(state, dict) and "state_dict" in state:
         state = state["state_dict"]
     clean_state = {k.split("model.", 1)[-1] if k.startswith("model.") else k: v for k, v in state.items()}

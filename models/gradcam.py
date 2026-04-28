@@ -6,10 +6,12 @@ import os
 from pathlib import Path
 from typing import Optional
 
-MPL_CACHE = Path("docs/mpl-cache")
+_ROOT = Path(__file__).resolve().parents[1]
+MPL_CACHE = _ROOT / "docs/mpl-cache"
 os.environ.setdefault("MPLCONFIGDIR", str(MPL_CACHE))
 MPL_CACHE.mkdir(parents=True, exist_ok=True)
 
+import matplotlib
 import matplotlib.cm as cm
 import numpy as np
 import torch
@@ -71,7 +73,7 @@ def compute_gradcam(model, pil_img: Image.Image, target_class: Optional[int] = N
 
     heatmap = np.uint8(cam * 255)
     heatmap = Image.fromarray(heatmap).resize(pil_img.size, resample=Image.BILINEAR)
-    colormap = cm.get_cmap("jet")
+    colormap = matplotlib.colormaps["jet"]
     heatmap = Image.fromarray(np.uint8(colormap(np.array(heatmap) / 255.0) * 255))
     return heatmap
 
