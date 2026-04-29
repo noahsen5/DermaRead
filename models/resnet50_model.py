@@ -1,4 +1,4 @@
-"""ResNet50 model definition — V2 (transfer) and V3 (balanced) checkpoints."""
+"""ResNet50 model definition — V2 (transfer), V3 (balanced), V4 (external fine-tune) checkpoints."""
 
 from pathlib import Path
 
@@ -11,6 +11,7 @@ CLASS_NAMES = ["non-psoriasis", "psoriasis"]
 _ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CHECKPOINT_V2 = _ROOT / "models/checkpoints/resnet50_v2.pt"
 DEFAULT_CHECKPOINT_V3 = _ROOT / "models/checkpoints/resnet50_v3_balanced.pt"
+DEFAULT_CHECKPOINT_V4 = _ROOT / "models/checkpoints/resnet50_v4_external.pt"
 
 def build_resnet50(weights="IMAGENET1K_V2", checkpoint_path=None, device="cpu"):
     m = resnet50(weights=None if weights is None else "IMAGENET1K_V2")
@@ -39,6 +40,10 @@ def load_v2_model(device="cpu"):
 
 def load_v3_model(device="cpu"):
     return build_resnet50(weights=None, checkpoint_path=DEFAULT_CHECKPOINT_V3, device=device)
+
+
+def load_v4_model(device="cpu"):
+    return build_resnet50(weights=None, checkpoint_path=DEFAULT_CHECKPOINT_V4, device=device)
 
 
 def predict_pil(model, pil: Image.Image):

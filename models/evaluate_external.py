@@ -43,6 +43,9 @@ def _load_model(version: str, device: str):
     if version == "v3":
         from models.resnet50_model import build_resnet50, DEFAULT_CHECKPOINT_V3
         return build_resnet50(weights=None, checkpoint_path=DEFAULT_CHECKPOINT_V3, device=device)
+    if version == "v4":
+        from models.resnet50_model import build_resnet50, DEFAULT_CHECKPOINT_V4
+        return build_resnet50(weights=None, checkpoint_path=DEFAULT_CHECKPOINT_V4, device=device)
     raise ValueError(f"Unknown version: {version}")
 
 
@@ -180,10 +183,10 @@ def _write_summary(df: pd.DataFrame) -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", choices=["v1", "v2", "v3"], default=None,
+    parser.add_argument("--model", choices=["v1", "v2", "v3", "v4"], default=None,
                         help="Single model version. Omit to run all.")
     args = parser.parse_args()
-    versions = [args.model] if args.model else ["v1", "v2", "v3"]
+    versions = [args.model] if args.model else ["v1", "v2", "v3", "v4"]
     run(versions)
 
 
