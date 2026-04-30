@@ -21,9 +21,10 @@ from PIL import Image
 
 from models.baseline import CLASS_NAMES, predict_pil
 from models.gradcam import save_gradcam
+from models.severity import BODY_PARTS, estimate_visual_severity, get_clinical_note
 from models.skin_tone_ita import compute_ita
 
-# ── Model registry ────────────────────────────────────────────────────────────
+# ── Model registry ─────────────────────────────────────────────────────────────
 
 _MODEL_REGISTRY: dict[str, object] = {}
 
@@ -33,95 +34,87 @@ def _try_register(label: str, loader_fn) -> None:
         _MODEL_REGISTRY[label] = loader_fn()
         print(f"[DermaRead] Loaded: {label}")
     except Exception as exc:
-        print(f"[DermaRead] {label} not available: {exc}")
+        print(f"[DermaRead] {label} unavailable: {exc}")
 
 
 _try_register(
     "V1 — ResNet18 Baseline",
-    lambda: __import__("models.baseline", fromlist=["load_trained_model"]).load_trained_model(device="cpu"),
+    lambda: __import__("models.baseline", fromlist=["load_trained_model"]).load_trained_model("cpu"),
 )
 
 try:
     from models.resnet50_model import load_v2_model, load_v3_model, load_v4_model
-    _try_register("V2 — ResNet50 Transfer", lambda: load_v2_model(device="cpu"))
-    _try_register("V3 — ResNet50 Balanced", lambda: load_v3_model(device="cpu"))
-    _try_register("V4 — ResNet50 Real-World (recommended)", lambda: load_v4_model(device="cpu"))
+    _try_register("V2 — ResNet50 Transfer", lambda: load_v2_model("cpu"))
+    _try_register("V3 — ResNet50 Balanced", lambda: load_v3_model("cpu"))
+    _try_register("V4 — ResNet50 Real-World (recommended)", lambda: load_v4_model("cpu"))
 except ImportError:
     pass
 
 if not _MODEL_REGISTRY:
     raise RuntimeError(
-        "No trained models found. Train at least V1 first:\n"
-        "  python models/train_resnet18_baseline.py"
+        "No trained models found. Run: python models/train_resnet18_baseline.py"
     )
 
-# Default to V4 if available — it handles real-world images
+# Default to V4 — handles real-world images; fall back to first available
 _DEFAULT_MODEL = next(
     (k for k in _MODEL_REGISTRY if "V4" in k),
     list(_MODEL_REGISTRY.keys())[0],
 )
 
-# ── Paths ─────────────────────────────────────────────────────────────────────
+# ── Paths ──────────────────────────────────────────────────────────────────────
 
 _GRADCAM_DIR = ROOT / "outputs/gradcam_examples"
 _GRADCAM_DIR.mkdir(parents=True, exist_ok=True)
 
-# ── Inference ─────────────────────────────────────────────────────────────────
+# ── Inference ──────────────────────────────────────────────────────────────────
 
-def _infer(img: Image.Image | None, model_choice: str):
-    """Run prediction, Grad-CAM, and skin-tone estimation; return (pred, probs, heatmap, skin)."""
+def _infer(img: Image.Image | None, model_choice: str, body_part: str):
     if img is None:
-        return "Upload an image to begin.", "", None, "_No image provided._"
+        return (
+            "_Upload an image to begin._", "", None,
+            "_No image provided._", "_No image provided._", "",
+        )
 
     model = _MODEL_REGISTRY.get(model_choice)
     if model is None:
-        return "Selected model is unavailable.", "", None, ""
+        return "Selected model is unavailable.", "", None, "", "", ""
 
-    # ── Validate image ────────────────────────────────────────────────────────
     try:
         img = img.convert("RGB")
     except Exception as exc:
-        return f"Invalid image format: {exc}", "", None, ""
+        return f"Invalid image format: {exc}", "", None, "", "", ""
 
-    # ── Prediction ────────────────────────────────────────────────────────────
+    # ── Prediction ─────────────────────────────────────────────────────────────
     try:
         probs = predict_pil(model, img)
     except Exception as exc:
-        return f"Prediction failed: {exc}", "", None, ""
+        return f"Prediction failed: {exc}", "", None, "", "", ""
 
-    label = max(probs, key=probs.get)
+    label      = max(probs, key=probs.get)
     confidence = probs[label]
 
-    # High-confidence predictions on external images are often wrong due to distribution shift.
-    # V1-V3 were trained on a single Kaggle-sourced dataset and will confidently misclassify
-    # real-world images. V4 is better but still has known limitations with non-Kaggle sources.
-    ood_warning = ""
-    if confidence > 0.97:
-        ood_warning = (
-            "\n\n> **Distribution shift warning:** This model was trained on a specific curated dataset. "
-            "High confidence on images from smartphones, clinics, or the internet does **not** "
-            "mean the prediction is correct — V1–V3 in particular will often predict with 100% confidence "
-            "on images that look nothing like their training data. "
-            "Use **V4 (Real-World)** for external images and treat all predictions as indicative only. "
-            "See the Model Card for details."
+    ood_note = ""
+    if confidence > 0.97 and "V4" not in model_choice:
+        ood_note = (
+            "\n\n> **Note:** Very high confidence from a model not fine-tuned on "
+            "real-world images (V1–V3). If this is an external photo, consider "
+            "switching to **V4** for more reliable results."
         )
 
-    pred_md = f"### {label}\n**Confidence:** {confidence:.1%}{ood_warning}"
-    prob_md = "\n".join(f"- **{cls}:** {probs[cls]:.1%}" for cls in CLASS_NAMES)
+    pred_md = f"### {label}\n**Confidence:** {confidence:.1%}{ood_note}"
+    prob_md  = "\n".join(f"- **{cls}:** {probs[cls]:.1%}" for cls in CLASS_NAMES)
 
-    # ── Grad-CAM ──────────────────────────────────────────────────────────────
-    # Always target the psoriasis class (index 1) so the heatmap always shows
-    # "where the model looked for psoriasis features", regardless of the prediction.
+    # ── Grad-CAM ───────────────────────────────────────────────────────────────
     heatmap_path = None
     try:
-        psoriasis_idx = CLASS_NAMES.index("psoriasis")
+        idx = CLASS_NAMES.index(label)
         out = _GRADCAM_DIR / f"gradcam_{uuid4().hex}.png"
-        save_gradcam(model, img, out, target_class=psoriasis_idx)
+        save_gradcam(model, img, out, target_class=idx)
         heatmap_path = str(out)
     except Exception as exc:
-        print(f"[Grad-CAM] Failed: {exc}")
+        print(f"[Grad-CAM] {exc}")
 
-    # ── Skin-tone proxy ───────────────────────────────────────────────────────
+    # ── Skin-tone proxy ────────────────────────────────────────────────────────
     try:
         ita_val, skin_label = compute_ita(img)
         if ita_val is not None:
@@ -133,36 +126,82 @@ def _infer(img: Image.Image | None, model_choice: str):
         else:
             skin_md = "_Could not estimate: insufficient skin-like pixels detected._"
     except Exception as exc:
-        skin_md = f"_Skin-tone proxy estimation failed: {exc}_"
+        skin_md = f"_Estimation failed: {exc}_"
 
-    return pred_md, prob_md, heatmap_path, skin_md
+    # ── Severity indicators ────────────────────────────────────────────────────
+    try:
+        sv = estimate_visual_severity(img)
+        if sv["reliable"]:
+            cov = sv["estimated_coverage_pct"]
+            ery = sv["erythema_index"]
+            tex = sv["texture_score"]
+            lbl = sv["severity_label"]
+
+            def _bar(v: float, n: int = 10) -> str:
+                filled = round(v * n)
+                return "█" * filled + "░" * (n - filled)
+
+            severity_md = (
+                f"### Visual Severity Indicators\n"
+                f"*Estimated from image colour and texture — not a clinical PASI score*\n\n"
+                f"| Indicator | Estimate | Scale |\n"
+                f"|---|---|---|\n"
+                f"| Estimated coverage | {cov:.1f}% of visible skin | — |\n"
+                f"| Erythema (redness) | {ery:.2f} | {_bar(ery)} |\n"
+                f"| Texture roughness | {tex:.2f} | {_bar(tex)} |\n"
+                f"\n**Composite visual label: {lbl}**\n\n"
+                f"> This is a visual approximation based on colour and texture analysis "
+                f"only. Clinical PASI scoring requires physical examination across four "
+                f"body regions by a dermatologist."
+            )
+        else:
+            severity_md = "_Could not estimate severity: insufficient skin pixels detected._"
+    except Exception as exc:
+        severity_md = f"_Severity estimation failed: {exc}_"
+
+    # ── Body part clinical note ────────────────────────────────────────────────
+    clinical_note = get_clinical_note(body_part)
+    if clinical_note and body_part != "Not specified":
+        context_md = f"**{body_part}**\n\n{clinical_note}"
+    else:
+        context_md = "_Select a body part above to see clinical context._"
+
+    return pred_md, prob_md, heatmap_path, skin_md, severity_md, context_md
 
 
-# ── Static text ───────────────────────────────────────────────────────────────
+# ── Static text ────────────────────────────────────────────────────────────────
 
 _DISCLAIMER = (
     "**⚠️ Research prototype only. Not a medical device. "
     "Predictions must not be used for diagnosis.**"
 )
 
+_OOD_NOTE = (
+    "> **About uploaded images:** This system was trained on a curated image dataset. "
+    "Photos from smartphones, clinics, or the internet differ from training data and "
+    "may produce unreliable predictions even with high confidence. "
+    "**V4 is recommended for real-world images** — it was fine-tuned on diverse clinical conditions."
+)
+
 _HEATMAP_NOTE = (
     "**What does the heatmap show?**  \n"
-    "This map always shows which regions the model examined when looking for **psoriasis features**, "
-    "regardless of whether the final prediction is psoriasis or not.  \n"
-    "Warm (red/yellow) areas = strongest psoriasis-related activation. Cool (blue) areas = least relevant.  \n"
-    "If the model predicted *non-psoriasis*, it means it examined these regions and found "
-    "insufficient evidence to classify as psoriasis.  \n\n"
-    "_Grad-CAM indicates model attention, not clinical diagnosis._"
+    "Grad-CAM highlights which image regions most influenced the prediction. "
+    "Warm (red/yellow) areas had the strongest effect. "
+    "This shows model attention, not clinically validated diagnostic regions."
 )
 
 _SUBTYPE_NOTE = (
-    "**Subtype classification is not available in this version.**  \n\n"
-    "The external validation dataset includes subtype annotations for 53 psoriasis images "
-    "across five subtypes: plaque (18), guttate (11), pustular (10), erythrodermic (7), inverse (7).  \n\n"
-    "A reliable deep learning classifier requires a minimum of ~100–200 labelled examples per class. "
-    "With approximately 10 images per subtype, training a subtype model would result in high variance "
-    "and unreliable predictions — so it has been intentionally excluded from this version.  \n\n"
-    "Expanding the annotated dataset to ≥100 images per subtype would enable this feature in a future version."
+    "**Subtype classification not trained.**  \n"
+    "The dataset contains 54 psoriasis images with subtype labels "
+    "(plaque, guttate, pustular, erythrodermic, inverse), insufficient for reliable training. "
+    "Subtype classification is implemented in the codebase and can be enabled "
+    "once sufficient labelled data per subtype is available.  \n\n"
+    "Known psoriasis subtypes and their clinical significance:\n"
+    "- **Plaque** — most common (~80–90%), well-demarcated erythematous plaques with silvery scale\n"
+    "- **Guttate** — small teardrop lesions, often triggered by streptococcal infection\n"
+    "- **Pustular** — sterile pustules; palmoplantar variant is particularly disabling\n"
+    "- **Erythrodermic** — widespread erythema affecting >90% BSA; medical emergency\n"
+    "- **Inverse** — smooth, shiny lesions in skin folds; no scale due to moisture"
 )
 
 _MODEL_CARD = """
@@ -170,54 +209,51 @@ _MODEL_CARD = """
 
 | Field | Details |
 |---|---|
-| **Architectures** | ResNet18 / ResNet50 (PyTorch / torchvision) |
+| **Architecture** | ResNet18 / ResNet50 (PyTorch / torchvision) |
 | **Task** | Binary classification — psoriasis vs. non-psoriasis |
 | **Input** | 224 × 224 RGB, ImageNet normalisation |
-| **V1 — ResNet18 Baseline** | Trained on ~700 images (Kaggle-sourced) · 100% internal test · 54% external · fails on non-Kaggle images |
-| **V2 — ResNet50 Transfer** | Two-phase ImageNet fine-tuning · 100% internal · 53% external · fails on non-Kaggle images |
-| **V3 — ResNet50 Balanced** | Class-weighted loss · 100% internal · 53% external · no improvement over V2 externally |
-| **V4 — ResNet50 Real-World** | Fine-tuned on 609 diverse images · 79% on 762-image external set · **recommended** |
-| **Why V1–V3 fail externally** | Non-psoriasis training class = clear healthy skin only. Models learned: any visible skin condition → psoriasis. External non-psoriasis images (acne, eczema, etc.) are misclassified at ~99% rate. |
-| **Why any model may fail on your image** | All models were trained/validated on a specific Kaggle-sourced dataset. Images from other clinical sources, smartphones, or the internet may look different enough to cause incorrect predictions — even with very high confidence. This is a known distribution shift problem in medical AI. |
-| **Fairness** | ITA-based skin-tone proxy — groups: Light / Medium / Dark. Not equivalent to Fitzpatrick scale. |
-| **Explainability** | Grad-CAM always targets the psoriasis class — shows where the model looked for psoriasis features |
-| **Subtype** | Not trained — 53 labelled examples across 5 subtypes is insufficient (~10 per class) |
-| **Known limitations** | V4 held-out test accuracy: 68% (153 images); no clinical validation; IPC-source clinical photos achieve only 20% with V4 |
+| **Training set** | 700 images (350 per class) from a curated single-source dataset |
+| **External validation** | 762 images (405 psoriasis, 357 diverse non-psoriasis conditions) + 16,550 Fitzpatrick17k images |
+| **V1 ResNet18 Baseline** | 100% internal accuracy · 54% external · not suitable for real-world use |
+| **V2 ResNet50 Transfer** | 100% internal · 53% external · two-phase ImageNet fine-tuning |
+| **V3 ResNet50 Balanced** | 100% internal · 53% external · inverse-frequency class weighting |
+| **V4 ResNet50 Real-World** | 81% internal · 82% full-external · **68% on held-out external test** · recommended |
+| **Key finding** | V1–V3 classify all real-world skin conditions as psoriasis (~0% non-psoriasis recall). External validation revealed the original non-psoriasis class was clear healthy skin, not real conditions. V4 fixes this. |
+| **Fitzpatrick17k validation** | V3: AUC 0.627 · sensitivity 0.783 across 16,550 images (114 conditions). Sensitivity gap across skin types I–VI = 0.175. |
+| **Fairness** | ITA proxy (Light/Medium/Dark) on internal data; real Fitzpatrick scale (Types I–VI) on Fitzpatrick17k external set |
+| **Explainability** | Grad-CAM heatmaps on final convolutional layer |
+| **Severity** | Visual approximation only — not clinical PASI |
+| **Subtype** | Not trained — insufficient per-subtype samples |
+| **Limitations** | No clinical validation; single training source; ITA proxy imperfect; V4 held-out accuracy 68% |
 """
 
 
-# ── Gradio UI ─────────────────────────────────────────────────────────────────
+# ── Gradio UI ──────────────────────────────────────────────────────────────────
 
-with gr.Blocks(title="DermaRead", theme=gr.themes.Soft()) as demo:
+with gr.Blocks(title="DermaRead") as demo:
     gr.Markdown("# DermaRead")
     gr.Markdown("### Explainable psoriasis detection with skin-tone-aware fairness evaluation")
     gr.Markdown(_DISCLAIMER)
 
     with gr.Row():
-        # Left column: inputs
-        with gr.Column(scale=1, min_width=280):
+        # ── Left column: inputs ───────────────────────────────────────────────
+        with gr.Column(scale=1, min_width=300):
             img_input = gr.Image(type="pil", label="Upload skin image")
-            gr.Markdown(
-                "> **External image note:** This model was trained on a single "
-                "curated dataset. Images from smartphones, clinics, or the internet "
-                "may be **out-of-distribution** and will likely produce unreliable "
-                "predictions, even with high confidence scores."
+            gr.Markdown(_OOD_NOTE)
+
+            body_part = gr.Dropdown(
+                choices=BODY_PARTS,
+                value="Not specified",
+                label="Body location (optional — adds clinical context)",
             )
             model_selector = gr.Dropdown(
                 choices=list(_MODEL_REGISTRY.keys()),
                 value=_DEFAULT_MODEL,
                 label="Model version",
             )
-            gr.Markdown(
-                "_**V4 (Real-World)** is recommended for all use. "
-                "V1–V3 are research baselines: they score 100% on the internal test set "
-                "but classify nearly all real-world skin conditions as psoriasis due to "
-                "training data limitations — they are included to demonstrate this finding, "
-                "not for practical use._"
-            )
-            submit_btn = gr.Button("Analyse", variant="primary")
+            submit_btn = gr.Button("Analyse", variant="primary", size="lg")
 
-        # Right column: tabbed results
+        # ── Right column: tabbed results ──────────────────────────────────────
         with gr.Column(scale=2):
             with gr.Tab("Prediction"):
                 pred_output = gr.Markdown(value="_Upload an image to begin._")
@@ -227,19 +263,19 @@ with gr.Blocks(title="DermaRead", theme=gr.themes.Soft()) as demo:
                 heatmap_output = gr.Image(type="filepath", label="Grad-CAM overlay")
                 gr.Markdown(_HEATMAP_NOTE)
 
-            with gr.Tab("Fairness Context"):
-                gr.Markdown(
-                    "**Why is skin-tone shown here?**  \n"
-                    "Medical AI systems can perform differently across skin tones. "
-                    "This project evaluated model fairness by estimating skin tone from each image "
-                    "using the Individual Typology Angle (ITA) — a photometric proxy computed from "
-                    "CIELAB colour values. Performance was compared across Light, Medium, and Dark "
-                    "estimated-tone groups to identify any disparity.  \n\n"
-                    "_This estimate is NOT used to make predictions and does NOT affect the output above. "
-                    "It is provided as context for the fairness evaluation research._"
-                )
+            with gr.Tab("Skin-Tone Proxy"):
                 skin_tone_output = gr.Markdown(
-                    value="_Upload an image to see the estimated skin-tone proxy._"
+                    value="_Upload an image to estimate._"
+                )
+
+            with gr.Tab("Visual Severity"):
+                severity_output = gr.Markdown(
+                    value="_Upload an image to estimate._"
+                )
+
+            with gr.Tab("Body Part Context"):
+                context_output = gr.Markdown(
+                    value="_Select a body part on the left to see clinical notes._"
                 )
 
             with gr.Tab("Subtype"):
@@ -248,17 +284,22 @@ with gr.Blocks(title="DermaRead", theme=gr.themes.Soft()) as demo:
     with gr.Accordion("Model Card", open=False):
         gr.Markdown(_MODEL_CARD)
 
-    _outputs = [pred_output, prob_output, heatmap_output, skin_tone_output]
-    submit_btn.click(fn=_infer, inputs=[img_input, model_selector], outputs=_outputs)
-    img_input.change(fn=_infer, inputs=[img_input, model_selector], outputs=_outputs)
+    _outputs = [
+        pred_output, prob_output, heatmap_output,
+        skin_tone_output, severity_output, context_output,
+    ]
+    submit_btn.click(fn=_infer, inputs=[img_input, model_selector, body_part], outputs=_outputs)
+    img_input.change(fn=_infer, inputs=[img_input, model_selector, body_part], outputs=_outputs)
+    body_part.change(fn=_infer, inputs=[img_input, model_selector, body_part], outputs=_outputs)
 
 
-# ── Launch ────────────────────────────────────────────────────────────────────
+# ── Launch ─────────────────────────────────────────────────────────────────────
 
 _PORT_ENV = os.environ.get("GRADIO_SERVER_PORT")
-_SERVER = os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1")
-_SHARE = os.environ.get("GRADIO_SHARE", "false").lower() in {"1", "true", "yes"}
+_SERVER   = os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1")
+_SHARE    = os.environ.get("GRADIO_SHARE", "false").lower() in {"1", "true", "yes"}
 
 if __name__ == "__main__":
     port = int(_PORT_ENV) if _PORT_ENV else None
-    demo.launch(server_name=_SERVER, server_port=port, share=_SHARE)
+    demo.launch(server_name=_SERVER, server_port=port, share=_SHARE,
+                theme=gr.themes.Soft())
