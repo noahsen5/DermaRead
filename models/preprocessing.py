@@ -17,9 +17,8 @@ IMAGENET_STD  = [0.229, 0.224, 0.225]
 RESIZE_SIZE   = 256
 INPUT_SIZE    = 224
 
-# ── Inference transform (no augmentation) ─────────────────────────────────────
-# Used by: predict_pil, Grad-CAM, evaluation, debug scripts, Gradio app.
-# Must NOT change without retraining all models.
+# ── Inference transform (no augmentation) ───────
+# Used by: predict_pil, Grad-CAM, evaluation, debug scripts, Gradio app
 inference_transform = T.Compose([
     T.Resize(RESIZE_SIZE),
     T.CenterCrop(INPUT_SIZE),
@@ -27,7 +26,7 @@ inference_transform = T.Compose([
     T.Normalize(IMAGENET_MEAN, IMAGENET_STD),
 ])
 
-# ── Training transform (augmented for real-world generalisation) ──────────────
+# ── Training transform (augmented for real-world generalisation) ───
 # Used only inside ManifestDataset / ExternalDataset when split == "train".
 # Augmentations chosen to match real-world variation without distorting lesion structure:
 #   ColorJitter   — different cameras, lighting conditions, skin tones

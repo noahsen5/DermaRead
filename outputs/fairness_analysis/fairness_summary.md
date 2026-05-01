@@ -9,9 +9,9 @@
 
 | Group | N | Accuracy | F1 | FPR | FNR |
 |---|---|---|---|---|---|
-| Dark | 19 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
-| Light | 68 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
-| Medium | 63 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
+| Dark | 189 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
+| Light | 514 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
+| Medium | 798 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
 
 - **Best group:** Dark (100.00%)
 - **Worst group:** Dark (100.00%)
@@ -21,21 +21,21 @@
 
 | Group | N | Accuracy | F1 | FPR | FNR |
 |---|---|---|---|---|---|
-| Dark | 19 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
-| Light | 68 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
-| Medium | 63 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
+| Dark | 189 | 99.47% | 0.9948 | 0.0000 | 0.0057 |
+| Light | 514 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
+| Medium | 798 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
 
-- **Best group:** Dark (100.00%)
-- **Worst group:** Dark (100.00%)
-- **Accuracy gap:** 0.00%
+- **Best group:** Light (100.00%)
+- **Worst group:** Dark (99.47%)
+- **Accuracy gap:** 0.53%
 
 ## v3 — ResNet50 Balanced
 
 | Group | N | Accuracy | F1 | FPR | FNR |
 |---|---|---|---|---|---|
-| Dark | 19 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
-| Light | 68 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
-| Medium | 63 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
+| Dark | 189 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
+| Light | 514 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
+| Medium | 798 | 100.00% | 1.0000 | 0.0000 | 0.0000 |
 
 - **Best group:** Dark (100.00%)
 - **Worst group:** Dark (100.00%)
@@ -43,9 +43,9 @@
 
 ## Effect of Class Balancing (V2 vs V3)
 
-- V2 accuracy gap: 0.00%
+- V2 accuracy gap: 0.53%
 - V3 accuracy gap: 0.00%
-- The balanced model did **not** substantially reduce the fairness gap; further mitigation may be required.
+- The balanced model **reduced** the cross-group performance gap.
 
 ## Limitations
 

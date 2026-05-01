@@ -46,12 +46,11 @@ CHECKPOINT   = ROOT / "models/checkpoints/resnet50_v4_external.pt"
 OUTPUT_DIR   = ROOT / "outputs/v4_external_finetuned"
 LOG_PATH     = OUTPUT_DIR / "training_log.csv"
 
-# Held-out test results path — separate from the internal test set
+# Held-out test results path, separate from the internal test set
 EXT_TEST_CSV = ROOT / "outputs/v4_external_finetuned/external_test_results.csv"
 
 
-# ── Dataset ───────────────────────────────────────────────────────────────────
-
+# ── Dataset ────────
 class ExternalDataset(Dataset):
     def __init__(self, rows: pd.DataFrame, img_root: Path, split: str = "train"):
         self.rows = rows.reset_index(drop=True)
@@ -88,8 +87,7 @@ def _class_weights(df: pd.DataFrame) -> torch.Tensor:
     return torch.tensor(w, dtype=torch.float32)
 
 
-# ── Training ──────────────────────────────────────────────────────────────────
-
+# ── Training ──────
 def _get_device():
     if torch.backends.mps.is_available(): return torch.device("mps")
     if torch.cuda.is_available():         return torch.device("cuda")
@@ -136,8 +134,7 @@ def _eval_per_class(model, loader, device) -> dict:
     return {c: v["correct"] / max(1, v["total"]) for c, v in counts.items()}
 
 
-# ── External test evaluation ───────────────────────────────────────────────────
-
+# ── External test evaluation ───────
 def _eval_external_test(model, test_df: pd.DataFrame, device: str) -> None:
     """Predict on external held-out test rows and save to CSV."""
     from models.resnet50_model import predict_pil
@@ -180,8 +177,7 @@ def _eval_external_test(model, test_df: pd.DataFrame, device: str) -> None:
         print(f"Saved: {EXT_TEST_CSV}")
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
-
+# ── Main ──────────
 def main(epochs: int = 15, lr: float = 5e-6, batch_size: int = 16) -> None:
     if not EXT_MANIFEST.exists():
         raise FileNotFoundError("external_manifest.csv not found.")

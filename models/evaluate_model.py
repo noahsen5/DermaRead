@@ -35,8 +35,7 @@ _SUMMARY_FIELDS = [
 ]
 
 
-# ── Inference ─────────────────────────────────────────────────────────────────
-
+# ── Inference ────────────────
 def collect_predictions(model, split: str, device) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Run model on a split; return (true_labels, predicted_labels, pos_probs)."""
     ds = ManifestDataset(MANIFEST, split=split, img_root=ROOT / "data/raw")

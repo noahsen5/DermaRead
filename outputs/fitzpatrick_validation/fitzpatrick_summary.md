@@ -11,9 +11,9 @@ Total images evaluated: 16,550
 
 | Model | N | AUC | AP | Accuracy | Sensitivity | Specificity | PPV | F1 |
 |---|---|---|---|---|---|---|---|---|
-| v1 (ResNet18 Baseline) | 16,550 | 0.5531 | 0.0529 | 0.2947 | 0.7745 | 0.2733 | 0.0453 | 0.0855 |
-| v2 (ResNet50 Transfer) | 16,550 | 0.6130 | 0.0678 | 0.4194 | 0.7404 | 0.4051 | 0.0525 | 0.0980 |
-| v3 (ResNet50 Balanced) | 16,550 | 0.6271 | 0.0767 | 0.3731 | 0.7830 | 0.3548 | 0.0512 | 0.0962 |
+| v1 (ResNet18 Baseline) | 16,550 | 0.6131 | 0.0637 | 0.5657 | 0.6071 | 0.5639 | 0.0583 | 0.1064 |
+| v2 (ResNet50 Transfer) | 16,550 | 0.6204 | 0.0709 | 0.4576 | 0.7064 | 0.4465 | 0.0537 | 0.0999 |
+| v3 (ResNet50 Balanced) | 16,550 | 0.6300 | 0.0760 | 0.4763 | 0.7106 | 0.4658 | 0.0559 | 0.1036 |
 
 ## Fairness by Fitzpatrick Scale (Real Labels)
 
@@ -25,49 +25,49 @@ Total images evaluated: 16,550
 
 | Fitzpatrick Type | N | Psoriasis N | AUC | Sensitivity | Specificity | Accuracy |
 |---|---|---|---|---|---|---|
-| Unknown | 565 | 32 | 0.6124 | 0.8438 | 0.2608 | 0.2938 |
-| Type I (very fair) | 2,944 | 129 | 0.5201 | 0.6667 | 0.3275 | 0.3424 |
-| Type II (fair) | 4,802 | 250 | 0.5352 | 0.7720 | 0.2797 | 0.3053 |
-| Type III (medium) | 3,304 | 105 | 0.5926 | 0.8476 | 0.2579 | 0.2766 |
-| Type IV (olive) | 2,775 | 98 | 0.6160 | 0.8571 | 0.2417 | 0.2634 |
-| Type V (brown) | 1,529 | 67 | 0.5082 | 0.7164 | 0.2373 | 0.2583 |
-| Type VI (dark brown/black) | 631 | 24 | 0.5977 | 0.7917 | 0.2932 | 0.3122 |
+| Unknown | 565 | 32 | 0.6282 | 0.7500 | 0.4615 | 0.4779 |
+| Type I (very fair) | 2,944 | 129 | 0.6130 | 0.4961 | 0.6252 | 0.6196 |
+| Type II (fair) | 4,802 | 250 | 0.6046 | 0.5640 | 0.6217 | 0.6187 |
+| Type III (medium) | 3,304 | 105 | 0.5936 | 0.5524 | 0.5927 | 0.5914 |
+| Type IV (olive) | 2,775 | 98 | 0.6696 | 0.7245 | 0.5196 | 0.5268 |
+| Type V (brown) | 1,529 | 67 | 0.6425 | 0.8209 | 0.4056 | 0.4238 |
+| Type VI (dark brown/black) | 631 | 24 | 0.5646 | 0.6250 | 0.3608 | 0.3708 |
 
-- **Best sensitivity:** Type IV (olive) (0.8571)
-- **Worst sensitivity:** Type I (very fair) (0.6667)
-- **Sensitivity gap:** 0.1904
+- **Best sensitivity:** Type V (brown) (0.8209)
+- **Worst sensitivity:** Type I (very fair) (0.4961)
+- **Sensitivity gap:** 0.3248
 
 ### v2 (ResNet50 Transfer)
 
 | Fitzpatrick Type | N | Psoriasis N | AUC | Sensitivity | Specificity | Accuracy |
 |---|---|---|---|---|---|---|
-| Unknown | 565 | 32 | 0.6400 | 0.8750 | 0.3133 | 0.3451 |
-| Type I (very fair) | 2,944 | 129 | 0.5784 | 0.6434 | 0.4707 | 0.4783 |
-| Type II (fair) | 4,802 | 250 | 0.5970 | 0.6960 | 0.4332 | 0.4469 |
-| Type III (medium) | 3,304 | 105 | 0.6112 | 0.7333 | 0.4151 | 0.4252 |
-| Type IV (olive) | 2,775 | 98 | 0.6411 | 0.8061 | 0.3717 | 0.3870 |
-| Type V (brown) | 1,529 | 67 | 0.6935 | 0.8806 | 0.3064 | 0.3316 |
-| Type VI (dark brown/black) | 631 | 24 | 0.6721 | 0.9167 | 0.3031 | 0.3265 |
+| Unknown | 565 | 32 | 0.5939 | 0.7188 | 0.3565 | 0.3770 |
+| Type I (very fair) | 2,944 | 129 | 0.5662 | 0.5736 | 0.5094 | 0.5122 |
+| Type II (fair) | 4,802 | 250 | 0.6194 | 0.6880 | 0.4785 | 0.4894 |
+| Type III (medium) | 3,304 | 105 | 0.6265 | 0.7143 | 0.4676 | 0.4755 |
+| Type IV (olive) | 2,775 | 98 | 0.6673 | 0.8061 | 0.4064 | 0.4205 |
+| Type V (brown) | 1,529 | 67 | 0.6853 | 0.8358 | 0.3413 | 0.3630 |
+| Type VI (dark brown/black) | 631 | 24 | 0.6236 | 0.7917 | 0.3130 | 0.3312 |
 
-- **Best sensitivity:** Type VI (dark brown/black) (0.9167)
-- **Worst sensitivity:** Type I (very fair) (0.6434)
-- **Sensitivity gap:** 0.2733
+- **Best sensitivity:** Type V (brown) (0.8358)
+- **Worst sensitivity:** Type I (very fair) (0.5736)
+- **Sensitivity gap:** 0.2622
 
 ### v3 (ResNet50 Balanced)
 
 | Fitzpatrick Type | N | Psoriasis N | AUC | Sensitivity | Specificity | Accuracy |
 |---|---|---|---|---|---|---|
-| Unknown | 565 | 32 | 0.6375 | 0.8125 | 0.2833 | 0.3133 |
-| Type I (very fair) | 2,944 | 129 | 0.6150 | 0.7364 | 0.4149 | 0.4290 |
-| Type II (fair) | 4,802 | 250 | 0.6167 | 0.7480 | 0.3759 | 0.3953 |
-| Type III (medium) | 3,304 | 105 | 0.6191 | 0.7905 | 0.3632 | 0.3768 |
-| Type IV (olive) | 2,775 | 98 | 0.6293 | 0.8061 | 0.3224 | 0.3395 |
-| Type V (brown) | 1,529 | 67 | 0.7168 | 0.9104 | 0.2756 | 0.3035 |
-| Type VI (dark brown/black) | 631 | 24 | 0.6680 | 0.8750 | 0.2702 | 0.2932 |
+| Unknown | 565 | 32 | 0.6085 | 0.7188 | 0.3771 | 0.3965 |
+| Type I (very fair) | 2,944 | 129 | 0.5814 | 0.5891 | 0.5222 | 0.5251 |
+| Type II (fair) | 4,802 | 250 | 0.6221 | 0.6760 | 0.4980 | 0.5073 |
+| Type III (medium) | 3,304 | 105 | 0.6324 | 0.7143 | 0.4817 | 0.4891 |
+| Type IV (olive) | 2,775 | 98 | 0.6781 | 0.8265 | 0.4300 | 0.4440 |
+| Type V (brown) | 1,529 | 67 | 0.7123 | 0.8806 | 0.3680 | 0.3905 |
+| Type VI (dark brown/black) | 631 | 24 | 0.6275 | 0.7500 | 0.3509 | 0.3661 |
 
-- **Best sensitivity:** Type V (brown) (0.9104)
-- **Worst sensitivity:** Type I (very fair) (0.7364)
-- **Sensitivity gap:** 0.1740
+- **Best sensitivity:** Type V (brown) (0.8806)
+- **Worst sensitivity:** Type I (very fair) (0.5891)
+- **Sensitivity gap:** 0.2915
 
 ## Dataset Notes
 

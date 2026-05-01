@@ -99,7 +99,7 @@ def main(epochs: int = 15, lr: float = 1e-4, batch_size: int = 32) -> None:
     model = build_resnet50(weights="IMAGENET1K_V2").to(device)
     loss_fn = nn.CrossEntropyLoss()
 
-    # Phase 1 — warm up head only
+    # Phase 1 , warm up head only
     for p in model.parameters():
         p.requires_grad = False
     for p in model.fc.parameters():
@@ -112,7 +112,7 @@ def main(epochs: int = 15, lr: float = 1e-4, batch_size: int = 32) -> None:
         val_acc = _eval_accuracy(model, val_loader, device)
         print(f"  Phase1 epoch {epoch}/5  loss={loss:.4f}  val_acc={val_acc:.2%}")
 
-    # Phase 2 — fine-tune full network with L2 regularisation to prevent loss→0
+    # Phase 2 , fine-tune full network with L2 regularisation to prevent loss→0
     for p in model.parameters():
         p.requires_grad = True
     optimizer = optim.Adam(model.parameters(), lr=lr, weight_decay=1e-4)

@@ -1,5 +1,5 @@
 model_version,model_name,dataset_size,accuracy,precision,recall,f1,auc,notes
-v2,ResNet50 Transfer,7005,1.0,1.0,1.0,1.0,1.0,
-v3,ResNet50 Balanced (Weighted Loss),7005,1.0,1.0,1.0,1.0,1.0,Inverse-frequency class weights via CrossEntropyLoss(weight=...)
-v1,ResNet18 Baseline,700,1.0,1.0,1.0,1.0,1.0,
-v4,ResNet50 Fine-tuned (External Data),150,0.8133,0.8641,0.8133,0.8066,1.0000,Fine-tuned from V2 on external diverse-condition dataset
+v4,ResNet50 Fine-tuned (External Data),150,0.8133,0.8641,0.8133,0.8066,1.0,Fine-tuned from V2 on external diverse-condition dataset
+v1,ResNet18 Baseline,7005,1.0,1.0,1.0,1.0,1.0,
+v2,ResNet50 Transfer,7005,0.9993,0.9993,0.9993,0.9993,1.0,
+v3,ResNet50 Balanced (Weighted Loss),7005,1.0,1.0,1.0,1.0,1.0000,Inverse-frequency class weights via CrossEntropyLoss(weight=...)

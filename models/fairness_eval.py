@@ -104,7 +104,7 @@ def _group_metrics(labels: np.ndarray, preds: np.ndarray) -> dict:
                 false_positive_rate=round(fpr, 4), false_negative_rate=round(fnr, 4))
 
 
-# ── Summary markdown ──────────────────────────────────────────────────────────
+# ── summary markdown ────────────
 
 def _write_summary(df: pd.DataFrame) -> None:
     lines = [
@@ -142,7 +142,7 @@ def _write_summary(df: pd.DataFrame) -> None:
                 "",
             ]
 
-    # Cross-version fairness delta
+    # Cross version fairness delta
     gaps = {}
     for ver in df["model_version"].unique():
         vdf = df[(df["model_version"] == ver) & (df["sample_count"] > 0)]
@@ -177,7 +177,7 @@ def _write_summary(df: pd.DataFrame) -> None:
     print(f"Saved: {out}")
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# ── Main ─────────
 
 def run_fairness_evaluation(versions: list[str] | None = None) -> None:
     if not PROCESSED_MANIFEST.exists():

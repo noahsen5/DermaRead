@@ -40,7 +40,7 @@ OUTPUTS.mkdir(parents=True, exist_ok=True)
 MANIFEST = ROOT / "data/manifest.split.csv"
 
 
-# ── Class mapping ──────────────────────────────────────────────────────────────
+# ── Class mapping ──────
 
 def check_and_save_class_mapping() -> dict:
     """Verify CLASS_NAMES is consistent everywhere and save to JSON."""
@@ -73,7 +73,7 @@ def check_and_save_class_mapping() -> dict:
         if not match:
             all_ok = False
 
-    # Check checkpoint 'classes' fields
+    # check checkpoint 'classes' fields
     ckpt_results = {}
     for ver, fname in [("v1", "resnet18_baseline.pt"),
                        ("v2", "resnet50_v2.pt"),
@@ -103,7 +103,7 @@ def check_and_save_class_mapping() -> dict:
     return mapping
 
 
-# ── Model loader ───────────────────────────────────────────────────────────────
+# ── Model loader ────────
 
 def _load_model(version: str):
     device = "cuda" if torch.cuda.is_available() else "cpu"
@@ -119,7 +119,7 @@ def _load_model(version: str):
     raise ValueError(f"Unknown version: {version}")
 
 
-# ── Prediction ─────────────────────────────────────────────────────────────────
+# ── Prediction ─────────
 
 def _predict(model, img_path: Path, device: str) -> dict:
     from PIL import Image
@@ -139,7 +139,7 @@ def _predict(model, img_path: Path, device: str) -> dict:
     }
 
 
-# ── Dataset debug run ──────────────────────────────────────────────────────────
+# ── Dataset debug run ───────
 
 def run_dataset_debug(version: str = "v1") -> pd.DataFrame:
     """Test 10 psoriasis + 10 non-psoriasis images from the test split."""
@@ -190,7 +190,7 @@ def run_dataset_debug(version: str = "v1") -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
-# ── External image tests template ──────────────────────────────────────────────
+# ── External image tests template ─────────
 
 def create_external_tests_template() -> None:
     """
@@ -274,7 +274,7 @@ def run_external_tests(version: str = "v1") -> None:
         print("No new rows to predict.")
 
 
-# ── Main ───────────────────────────────────────────────────────────────────────
+# ── Main ─────────
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Debug DermaRead prediction pipeline.")

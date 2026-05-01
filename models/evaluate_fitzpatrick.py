@@ -39,7 +39,7 @@ OUT_DIR  = ROOT / "outputs/fitzpatrick_validation"
 
 PSORIASIS_LABELS = {"psoriasis", "pustular psoriasis"}
 
-# QC values that indicate unreliable labels — exclude these
+# QC values that indicate unreliable labels  
 BAD_QC = {"3 Wrongly labelled", "4 Other"}
 
 _VERSIONS = {
@@ -67,8 +67,7 @@ FITZ_LABELS = {
 }
 
 
-# ── Data loading ──────────────────────────────────────────────────────────────
-
+# ── Data loading ───
 def load_dataset(quick: bool = False) -> pd.DataFrame:
     df = pd.read_csv(CSV_PATH)
 
@@ -97,7 +96,7 @@ def load_dataset(quick: bool = False) -> pd.DataFrame:
     return df.reset_index(drop=True)
 
 
-# ── Model loading / inference ─────────────────────────────────────────────────
+# ── Model loading / inference ─────
 
 def _load_model(version: str, device: str):
     _, module_name, fn_name, ckpt = _VERSIONS[version]
@@ -129,7 +128,7 @@ def run_inference(model, df: pd.DataFrame, device: str) -> np.ndarray:
     return np.array(probs)
 
 
-# ── Metrics ───────────────────────────────────────────────────────────────────
+# ── Metrics ─────────────
 
 def _binary_metrics(true: np.ndarray, prob: np.ndarray, threshold: float = 0.5) -> dict:
     from sklearn.metrics import (
@@ -160,7 +159,7 @@ def _binary_metrics(true: np.ndarray, prob: np.ndarray, threshold: float = 0.5) 
                 f1=round(f1, 4))
 
 
-# ── Summary output ────────────────────────────────────────────────────────────
+# ── Summary output ──────
 
 def _write_summary(metrics_df: pd.DataFrame, per_scale_df: pd.DataFrame) -> None:
     lines = [

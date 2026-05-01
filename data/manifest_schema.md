@@ -6,12 +6,12 @@ splitting, dataset loader, fairness metrics, etc.).
 
 | column        | required | description |
 |---------------|----------|-------------|
-| `id`          | ✅ | Unique row identifier. Convention: `<patient_id>_<index>` |
-| `patient_id`  | ✅ | Pseudonymized patient / case ID used for patient-level splits. |
-| `relative_path` | ✅ | Path to the image relative to `data/raw/`. |
-| `label`       | ✅ | Ground-truth diagnosis. Use the canonical strings `non-psoriasis` or `psoriasis`. |
+| `id`          | yes | Unique row identifier. Convention: `<patient_id>_<index>` |
+| `patient_id`  | yes | Pseudonymized patient / case ID used for patient-level splits. |
+| `relative_path` | yes | Path to the image relative to `data/raw/`. |
+| `label`       | yes | Ground-truth diagnosis. Use the canonical strings `non-psoriasis` or `psoriasis`. |
 | `subtype`     | optional | Clinical subtype (e.g., plaque, guttate). |
-| `skin_tone`   | ✅ | Fitzpatrick tone bucket (`I`–`VI`). Used for bias slices. |
+| `skin_tone`   | yes | Fitzpatrick tone bucket (`I`–`VI`). Used for bias slices. |
 | `source`      | optional | Data source for provenance tracking. |
 | `license_url` | optional | License or usage terms. |
 | `consent`     | optional | Consent status (research_use, etc.). |

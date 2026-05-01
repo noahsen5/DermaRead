@@ -29,8 +29,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 
-# ── sRGB → CIELAB (D65) ──────────────────────────────────────────────────────
-
+# ── sRGB → CIELAB (D65) ────────
 _D65 = np.array([0.95047, 1.00000, 1.08883], dtype=np.float64)
 
 _RGB_TO_XYZ = np.array([
@@ -61,8 +60,7 @@ def rgb_to_lab(rgb_uint8: np.ndarray) -> np.ndarray:
     return np.stack([L, a, b], axis=-1)
 
 
-# ── Skin-pixel detection ──────────────────────────────────────────────────────
-
+# ── Skin-pixel detection ─────
 def _skin_mask(rgb: np.ndarray) -> np.ndarray:
     """
     Loose HSV-based skin-pixel detector covering light to dark skin tones.
@@ -89,7 +87,7 @@ def _skin_mask(rgb: np.ndarray) -> np.ndarray:
     return hue_ok & sat_ok & val_ok
 
 
-# ── ITA computation ───────────────────────────────────────────────────────────
+# ── ITA computation ──────
 
 # Three-group scheme (simplified from Chardon et al.):
 #   Light  : ITA >  41°
@@ -141,8 +139,7 @@ def compute_ita(pil_image: Image.Image) -> tuple[float | None, str]:
     return round(ita, 2), _ita_to_label(ita)
 
 
-# ── Manifest annotation ───────────────────────────────────────────────────────
-
+# ── Manifest annotation ────────
 def annotate_manifest(manifest_path: Path, img_root: Path, out_path: Path) -> None:
     """
     Read manifest CSV, compute ITA for every image, and write processed_manifest.csv

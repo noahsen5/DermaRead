@@ -133,33 +133,6 @@ nps_002,non_psoriasis/nps_002.jpg,non-psoriasis,google_images,web,medium,fair_us
 
 ---
 
-## Step 6 — After adding images, run the evaluation
-
-```bash
-python models/evaluate_external.py
-```
-
-This tests all three model versions (V1, V2, V3) on your images and saves:
-- outputs/external_validation/external_results.csv
-- outputs/external_validation/external_summary.md
-
-You can run it repeatedly as you add more images.
-
----
-
-## Step 7 — What to write in the dissertation
-
-> "An external validation set of N images was collected from publicly available
-> Kaggle datasets (cite them here) and supplementary web images used under fair use
-> for non-commercial academic research. Images were selected to include a range of
-> skin tones and image types not present in the original training data, with the
-> specific aim of evaluating out-of-distribution generalisation.
-> The external set was not used for training or hyperparameter selection at any stage."
-
-Then present the external accuracy table from external_summary.md.
-
----
-
 ## Step 8 — Common mistakes to avoid
 
 - Do NOT put the same image in both psoriasis and non_psoriasis folders.

@@ -168,7 +168,7 @@ def _write_summary(df: pd.DataFrame) -> None:
                 lines.append(f"| {src} | {len(grp)} | {grp['correct'].mean():.0%} |")
             lines.append("")
 
-        # Per class breakdown
+        # per class breakdown
         lines.append("### By true label")
         lines.append("| Label | N | Accuracy |")
         lines.append("|---|---|---|")
