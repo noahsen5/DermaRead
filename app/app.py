@@ -24,8 +24,6 @@ from models.gradcam import save_gradcam
 from models.severity import BODY_PARTS, estimate_visual_severity, get_clinical_note
 from models.skin_tone_ita import compute_ita
 
-# ──model registry ──
-
 _MODEL_REGISTRY: dict[str, object] = {}
 
 
@@ -55,18 +53,15 @@ if not _MODEL_REGISTRY:
         "No trained models found. Run: python models/train_resnet18_baseline.py"
     )
 
-# default to V4, handles real-world images and fall back to first available
 _DEFAULT_MODEL = next(
     (k for k in _MODEL_REGISTRY if "V4" in k),
     list(_MODEL_REGISTRY.keys())[0],
 )
 
-# ── paths ─────
-
 _GRADCAM_DIR = ROOT / "outputs/gradcam_examples"
 _GRADCAM_DIR.mkdir(parents=True, exist_ok=True)
 
-# ── inference ─────
+
 def _infer(img: Image.Image | None, model_choice: str, body_part: str):
     if img is None:
         return (
@@ -83,7 +78,6 @@ def _infer(img: Image.Image | None, model_choice: str, body_part: str):
     except Exception as exc:
         return f"Invalid image format: {exc}", "", None, "", "", ""
 
-    # ── Prediction ──────────
     try:
         probs = predict_pil(model, img)
     except Exception as exc:
@@ -103,7 +97,6 @@ def _infer(img: Image.Image | None, model_choice: str, body_part: str):
     pred_md = f"### {label}\n**Confidence:** {confidence:.1%}{ood_note}"
     prob_md  = "\n".join(f"- **{cls}:** {probs[cls]:.1%}" for cls in CLASS_NAMES)
 
-    # ── Grad-CAM ─────────────
     heatmap_path = None
     try:
         idx = CLASS_NAMES.index(label)
@@ -113,7 +106,6 @@ def _infer(img: Image.Image | None, model_choice: str, body_part: str):
     except Exception as exc:
         print(f"[Grad-CAM] {exc}")
 
-    # ── Skin-tone proxy ────────────
     try:
         ita_val, skin_label = compute_ita(img)
         if ita_val is not None:
@@ -127,7 +119,6 @@ def _infer(img: Image.Image | None, model_choice: str, body_part: str):
     except Exception as exc:
         skin_md = f"_Estimation failed: {exc}_"
 
-    # ── Severity indicators ─────────
     try:
         sv = estimate_visual_severity(img)
         if sv["reliable"]:
@@ -158,7 +149,6 @@ def _infer(img: Image.Image | None, model_choice: str, body_part: str):
     except Exception as exc:
         severity_md = f"_Severity estimation failed: {exc}_"
 
-    # ── Body part clinical note ────────
     clinical_note = get_clinical_note(body_part)
     if clinical_note and body_part != "Not specified":
         context_md = f"**{body_part}**\n\n{clinical_note}"
@@ -167,8 +157,6 @@ def _infer(img: Image.Image | None, model_choice: str, body_part: str):
 
     return pred_md, prob_md, heatmap_path, skin_md, severity_md, context_md
 
-
-# ── Static text ────
 
 _DISCLAIMER = (
     "**⚠️ Research prototype only. Not a medical device. "
@@ -227,15 +215,12 @@ _MODEL_CARD = """
 """
 
 
-# ── Gradio UI ────────
-
 with gr.Blocks(title="DermaRead") as demo:
     gr.Markdown("# DermaRead")
     gr.Markdown("### Explainable psoriasis detection with skin-tone-aware fairness evaluation")
     gr.Markdown(_DISCLAIMER)
 
     with gr.Row():
-        # ── Left column: inputs ───────
         with gr.Column(scale=1, min_width=300):
             img_input = gr.Image(type="pil", label="Upload skin image")
             gr.Markdown(_OOD_NOTE)
@@ -252,7 +237,6 @@ with gr.Blocks(title="DermaRead") as demo:
             )
             submit_btn = gr.Button("Analyse", variant="primary", size="lg")
 
-        # ── Right column: tabbed results 
         with gr.Column(scale=2):
             with gr.Tab("Prediction"):
                 pred_output = gr.Markdown(value="_Upload an image to begin._")
@@ -292,7 +276,6 @@ with gr.Blocks(title="DermaRead") as demo:
     body_part.change(fn=_infer, inputs=[img_input, model_selector, body_part], outputs=_outputs)
 
 
-# ── Launch ───────
 _PORT_ENV = os.environ.get("GRADIO_SERVER_PORT")
 _SERVER   = os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1")
 _SHARE    = os.environ.get("GRADIO_SHARE", "false").lower() in {"1", "true", "yes"}

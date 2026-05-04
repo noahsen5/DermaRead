@@ -23,24 +23,7 @@ import numpy as np
 from PIL import Image
 
 
-# ── Skin detection (reuse logic from skin_tone_ita) ────
-
-def _skin_mask(rgb: np.ndarray) -> np.ndarray:
-    f = rgb.astype(np.float32) / 255.0
-    r, g, b = f[..., 0], f[..., 1], f[..., 2]
-    maxc = np.maximum.reduce([r, g, b])
-    minc = np.minimum.reduce([r, g, b])
-    diff = maxc - minc + 1e-8
-    sat = np.where(maxc > 0, (maxc - minc) / maxc, 0.0)
-    val = maxc
-    hue = np.where(
-        maxc == r, (g - b) / diff % 6,
-        np.where(maxc == g, (b - r) / diff + 2.0, (r - g) / diff + 4.0),
-    ) / 6.0
-    hue_ok = (hue <= 0.12) | (hue >= 0.90)
-    sat_ok = (sat >= 0.06) & (sat <= 0.95)
-    val_ok = val >= 0.15
-    return hue_ok & sat_ok & val_ok
+from models.skin_tone_ita import _skin_mask  # single authoritative skin detector
 
 
 # ── Lesion detection within skin pixels ──────

@@ -1,4 +1,4 @@
-"""Minimal Grad-CAM helpers for the ResNet18 baseline."""
+"""Grad-CAM implementation for ResNet18 and ResNet50."""
 
 from __future__ import annotations
 

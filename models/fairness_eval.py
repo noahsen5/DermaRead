@@ -18,7 +18,6 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 import torch
-import torchvision.transforms as T
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -26,14 +25,10 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from models.dataset import CLASS_NAMES
+from models.preprocessing import inference_transform as _PREPROCESS
 
 PROCESSED_MANIFEST = ROOT / "data/processed_manifest.csv"
 FAIRNESS_DIR = ROOT / "outputs/fairness_analysis"
-
-_PREPROCESS = T.Compose([
-    T.Resize(256), T.CenterCrop(224), T.ToTensor(),
-    T.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
-])
 
 _VERSIONS = {
     "v1": ("ResNet18 Baseline", "models.baseline", "build_model",

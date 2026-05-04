@@ -98,7 +98,8 @@ def copy_files(rows):
         shutil.copy(src, dst)
 
 def main(limit_per_label: int | None = None):
-    rows = list(csv.DictReader(open(MANIFEST_IN)))
+    with open(MANIFEST_IN, newline="") as f:
+        rows = list(csv.DictReader(f))
     rows = limit_rows(rows, per_label_limit=limit_per_label)
     if not rows:
         print("No rows to process after applying limits.")
