@@ -1,0 +1,10 @@
+model_version,skin_tone_proxy,sample_count,accuracy,precision,recall,f1,false_positive_rate,false_negative_rate
+v1,Dark,189,1.0,1.0,1.0,1.0,0.0,0.0
+v1,Light,514,1.0,1.0,1.0,1.0,0.0,0.0
+v1,Medium,798,1.0,1.0,1.0,1.0,0.0,0.0
+v2,Dark,189,0.9947,0.9951,0.9947,0.9948,0.0,0.0057
+v2,Light,514,1.0,1.0,1.0,1.0,0.0,0.0
+v2,Medium,798,1.0,1.0,1.0,1.0,0.0,0.0
+v3,Dark,189,1.0,1.0,1.0,1.0,0.0,0.0
+v3,Light,514,1.0,1.0,1.0,1.0,0.0,0.0
+v3,Medium,798,1.0,1.0,1.0,1.0,0.0,0.0

@@ -1,0 +1,22 @@
+model,fitzpatrick_scale,scale_name,n,n_psoriasis,auc,ap,accuracy,sensitivity,specificity,ppv,f1
+v1 (ResNet18 Baseline),-1,Unknown,565,32,0.6282,0.0776,0.4779,0.75,0.4615,0.0772,0.1399
+v1 (ResNet18 Baseline),1,Type I (very fair),2944,129,0.613,0.0757,0.6196,0.4961,0.6252,0.0572,0.1026
+v1 (ResNet18 Baseline),2,Type II (fair),4802,250,0.6046,0.0747,0.6187,0.564,0.6217,0.0757,0.1335
+v1 (ResNet18 Baseline),3,Type III (medium),3304,105,0.5936,0.0531,0.5914,0.5524,0.5927,0.0426,0.0791
+v1 (ResNet18 Baseline),4,Type IV (olive),2775,98,0.6696,0.0807,0.5268,0.7245,0.5196,0.0523,0.0976
+v1 (ResNet18 Baseline),5,Type V (brown),1529,67,0.6425,0.0659,0.4238,0.8209,0.4056,0.0595,0.111
+v1 (ResNet18 Baseline),6,Type VI (dark brown/black),631,24,0.5646,0.0629,0.3708,0.625,0.3608,0.0372,0.0703
+v2 (ResNet50 Transfer),-1,Unknown,565,32,0.5939,0.082,0.377,0.7188,0.3565,0.0628,0.1156
+v2 (ResNet50 Transfer),1,Type I (very fair),2944,129,0.5662,0.072,0.5122,0.5736,0.5094,0.0509,0.0934
+v2 (ResNet50 Transfer),2,Type II (fair),4802,250,0.6194,0.0807,0.4894,0.688,0.4785,0.0676,0.123
+v2 (ResNet50 Transfer),3,Type III (medium),3304,105,0.6265,0.0617,0.4755,0.7143,0.4676,0.0422,0.0797
+v2 (ResNet50 Transfer),4,Type IV (olive),2775,98,0.6673,0.0789,0.4205,0.8061,0.4064,0.0474,0.0895
+v2 (ResNet50 Transfer),5,Type V (brown),1529,67,0.6853,0.0833,0.363,0.8358,0.3413,0.055,0.1031
+v2 (ResNet50 Transfer),6,Type VI (dark brown/black),631,24,0.6236,0.0661,0.3312,0.7917,0.313,0.0436,0.0826
+v3 (ResNet50 Balanced),-1,Unknown,565,32,0.6085,0.0882,0.3965,0.7188,0.3771,0.0648,0.1189
+v3 (ResNet50 Balanced),1,Type I (very fair),2944,129,0.5814,0.0742,0.5251,0.5891,0.5222,0.0535,0.0981
+v3 (ResNet50 Balanced),2,Type II (fair),4802,250,0.6221,0.0852,0.5073,0.676,0.498,0.0689,0.125
+v3 (ResNet50 Balanced),3,Type III (medium),3304,105,0.6324,0.064,0.4891,0.7143,0.4817,0.0433,0.0816
+v3 (ResNet50 Balanced),4,Type IV (olive),2775,98,0.6781,0.0892,0.444,0.8265,0.43,0.0504,0.095
+v3 (ResNet50 Balanced),5,Type V (brown),1529,67,0.7123,0.1043,0.3905,0.8806,0.368,0.06,0.1124
+v3 (ResNet50 Balanced),6,Type VI (dark brown/black),631,24,0.6275,0.07,0.3661,0.75,0.3509,0.0437,0.0826

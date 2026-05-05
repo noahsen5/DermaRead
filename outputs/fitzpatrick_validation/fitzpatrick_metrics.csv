@@ -1,0 +1,4 @@
+model,n,auc,ap,accuracy,sensitivity,specificity,ppv,f1
+v1 (ResNet18 Baseline),16550,0.6131,0.0637,0.5657,0.6071,0.5639,0.0583,0.1064
+v2 (ResNet50 Transfer),16550,0.6204,0.0709,0.4576,0.7064,0.4465,0.0537,0.0999
+v3 (ResNet50 Balanced),16550,0.63,0.076,0.4763,0.7106,0.4658,0.0559,0.1036

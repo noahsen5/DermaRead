@@ -1,0 +1,764 @@
+id,relative_path,label,source_dataset,image_type,skin_tone_notes,license,notes,subtype,body_part
+ps_001,psoriasis/ps_001.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,psoriasis full body male front abdomen,erythrodermic,trunk
+ps_002,psoriasis/ps_002.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,psoriasis back of elderly woman,erythrodermic,trunk
+ps_003,psoriasis/ps_003.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,psoriasis left side of back,erythrodermic,trunk
+ps_004,psoriasis/ps_004.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,psoriasis back,erythrodermic,trunk
+ps_005,psoriasis/ps_005.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,psoriasis full body back,erythrodermic,trunk
+ps_006,psoriasis/ps_006.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,psoriasis hand,erythrodermic,hands_feet
+ps_007,psoriasis/ps_007.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,psoriasis front of woman torso and legs,erythrodermic,lower_limbs
+ps_008,psoriasis/ps_008.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis woman's back,guttate,trunk
+ps_009,psoriasis/ps_009.jpg,psoriasis,Kaggle,dermoscopy,light,fair_use_academic,Close-up skin psoriasis dermoscopic image,guttate,multiple_unspecified
+ps_010,psoriasis/ps_010.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis side of male torso,guttate,trunk
+ps_011,psoriasis/ps_011.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis hand,guttate,hands_feet
+ps_012,psoriasis/ps_012.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis hand,guttate,hands_feet
+ps_013,psoriasis/ps_013.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis side of torso,guttate,trunk
+ps_014,psoriasis/ps_014.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis abdomen of woman,guttate,trunk
+ps_015,psoriasis/ps_015.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis back,guttate,trunk
+ps_016,psoriasis/ps_016.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis hand and back,guttate,hands_feet
+ps_017,psoriasis/ps_017.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis back,guttate,trunk
+ps_018,psoriasis/ps_018.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis back,guttate,trunk
+ps_019,psoriasis/ps_019.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis inner thighs and genital region female,inverse,skin_folds
+ps_020,psoriasis/ps_020.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis genital region and inner thighs,inverse,skin_folds
+ps_021,psoriasis/ps_021.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis underside of breast,inverse,skin_folds
+ps_022,psoriasis/ps_022.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis breast,inverse,skin_folds
+ps_023,psoriasis/ps_023.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis groin female,inverse,skin_folds
+ps_024,psoriasis/ps_024.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis underside of male chest,inverse,trunk
+ps_025,psoriasis/ps_025.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis near male genital region,inverse,skin_folds
+ps_026,psoriasis/ps_026.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis leg,plaque,lower_limbs
+ps_027,psoriasis/ps_027.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis leg,plaque,lower_limbs
+ps_028,psoriasis/ps_028.jpg,psoriasis,Kaggle,clinical_photo,dark,fair_use_academic,Psoriasis leg,plaque,lower_limbs
+ps_029,psoriasis/ps_029.jpg,psoriasis,Kaggle,clinical_photo,dark,fair_use_academic,Psoriasis leg,plaque,lower_limbs
+ps_030,psoriasis/ps_030.jpg,psoriasis,Kaggle,clinical_photo,dark,fair_use_academic,Psoriasis leg,plaque,lower_limbs
+ps_031,psoriasis/ps_031.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis eye region elderly male,plaque,multiple_unspecified
+ps_032,psoriasis/ps_032.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis leg,plaque,lower_limbs
+ps_033,psoriasis/ps_033.jpg,psoriasis,Kaggle,clinical_photo,dark,fair_use_academic,Psoriasis leg,plaque,lower_limbs
+ps_034,psoriasis/ps_034.jpg,psoriasis,Kaggle,clinical_photo,dark,fair_use_academic,Psoriasis leg,plaque,lower_limbs
+ps_035,psoriasis/ps_035.jpg,psoriasis,Kaggle,dermoscopy,light,fair_use_academic,Close-up psoriasis skin detail,plaque,multiple_unspecified
+ps_036,psoriasis/ps_036.jpg,psoriasis,Kaggle,dermoscopy,light,fair_use_academic,Close-up psoriasis skin detail,pustular,multiple_unspecified
+ps_037,psoriasis/ps_037.jpg,psoriasis,Kaggle,dermoscopy,light,fair_use_academic,Close-up psoriasis skin detail,pustular,multiple_unspecified
+ps_038,psoriasis/ps_038.jpg,psoriasis,Kaggle,dermoscopy,light,fair_use_academic,Close-up psoriasis skin detail,pustular,multiple_unspecified
+ps_039,psoriasis/ps_039.jpg,psoriasis,Kaggle,dermoscopy,light,fair_use_academic,Close-up psoriasis skin detail,pustular,multiple_unspecified
+ps_040,psoriasis/ps_040.jpg,psoriasis,Kaggle,dermoscopy,light,fair_use_academic,Close-up psoriasis skin detail,pustular,multiple_unspecified
+ps_041,psoriasis/ps_041.jpg,psoriasis,Kaggle,dermoscopy,light,fair_use_academic,Close-up psoriasis skin detail,pustular,multiple_unspecified
+ps_042,psoriasis/ps_042.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis leg,pustular,lower_limbs
+ps_043,psoriasis/ps_043.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,Psoriasis leg,pustular,lower_limbs
+ps_044,psoriasis/ps_044.jpg,psoriasis,IPC_dataset,clinical_photo,dark,fair_use_academic,psoriasis elbow,plaque,upper_limbs
+ps_045,psoriasis/ps_045.jpg,psoriasis,IPC_dataset,clinical_photo,dark,fair_use_academic, psoriasis female torso front,plaque,trunk
+ps_046,psoriasis/ps_046.jpg,psoriasis,IPC_dataset,clinical_photo,dark,fair_use_academic, psoriasis male feet,plaque,hands_feet
+ps_047,psoriasis/ps_047.jpg,psoriasis,IPC_dataset,clinical_photo,dark,fair_use_academic, psoriasis male torso,plaque,trunk
+ps_048,psoriasis/ps_048.jpg,psoriasis,IPC_dataset,dermoscopy,medium,fair_use_academic, psoriasis close-up skin,plaque,multiple_unspecified
+ps_049,psoriasis/ps_049.jpg,psoriasis,IPC_dataset,clinical_photo,medium,fair_use_academic, psoriasis male torso,plaque,trunk
+ps_050,psoriasis/ps_050.jpg,psoriasis,IPC_dataset,clinical_photo,medium,fair_use_academic, psoriasis arm,plaque,upper_limbs
+ps_052,psoriasis/ps_052.jpg,psoriasis,IPC_dataset,clinical_photo,medium,fair_use_academic, psoriasis chest male,pustular,trunk
+ps_053,psoriasis/ps_053.jpg,psoriasis,IPC_dataset,clinical_photo,medium,fair_use_academic, psoriasis legs,pustular,lower_limbs
+ps_054,psoriasis/ps_054.jpg,psoriasis,IPC_dataset,clinical_photo,medium,fair_use_academic, psoriasis male torso,plaque,trunk
+ps_055,psoriasis/ps_055.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_056,psoriasis/ps_056.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_057,psoriasis/ps_057.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_058,psoriasis/ps_058.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_059,psoriasis/ps_059.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_060,psoriasis/ps_060.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_061,psoriasis/ps_061.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_062,psoriasis/ps_062.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_063,psoriasis/ps_063.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_064,psoriasis/ps_064.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_065,psoriasis/ps_065.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_066,psoriasis/ps_066.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_067,psoriasis/ps_067.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_068,psoriasis/ps_068.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_069,psoriasis/ps_069.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_070,psoriasis/ps_070.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_071,psoriasis/ps_071.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_072,psoriasis/ps_072.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_073,psoriasis/ps_073.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_074,psoriasis/ps_074.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_075,psoriasis/ps_075.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_076,psoriasis/ps_076.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_077,psoriasis/ps_077.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_078,psoriasis/ps_078.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_079,psoriasis/ps_079.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_080,psoriasis/ps_080.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_081,psoriasis/ps_081.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_082,psoriasis/ps_082.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_083,psoriasis/ps_083.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_084,psoriasis/ps_084.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_085,psoriasis/ps_085.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_086,psoriasis/ps_086.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_087,psoriasis/ps_087.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_088,psoriasis/ps_088.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_089,psoriasis/ps_089.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_090,psoriasis/ps_090.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_091,psoriasis/ps_091.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_092,psoriasis/ps_092.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_093,psoriasis/ps_093.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_094,psoriasis/ps_094.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_095,psoriasis/ps_095.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_096,psoriasis/ps_096.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_097,psoriasis/ps_097.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_098,psoriasis/ps_098.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_099,psoriasis/ps_099.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_100,psoriasis/ps_100.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_101,psoriasis/ps_101.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_102,psoriasis/ps_102.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_103,psoriasis/ps_103.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_104,psoriasis/ps_104.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_105,psoriasis/ps_105.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_106,psoriasis/ps_106.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_107,psoriasis/ps_107.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_108,psoriasis/ps_108.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_109,psoriasis/ps_109.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_110,psoriasis/ps_110.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_111,psoriasis/ps_111.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_112,psoriasis/ps_112.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_113,psoriasis/ps_113.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_114,psoriasis/ps_114.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_115,psoriasis/ps_115.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_116,psoriasis/ps_116.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_117,psoriasis/ps_117.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_118,psoriasis/ps_118.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_119,psoriasis/ps_119.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_120,psoriasis/ps_120.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_121,psoriasis/ps_121.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_122,psoriasis/ps_122.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_123,psoriasis/ps_123.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_124,psoriasis/ps_124.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_125,psoriasis/ps_125.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_126,psoriasis/ps_126.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_127,psoriasis/ps_127.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_128,psoriasis/ps_128.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_129,psoriasis/ps_129.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_130,psoriasis/ps_130.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_131,psoriasis/ps_131.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_132,psoriasis/ps_132.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_133,psoriasis/ps_133.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_134,psoriasis/ps_134.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_135,psoriasis/ps_135.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_136,psoriasis/ps_136.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_137,psoriasis/ps_137.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_138,psoriasis/ps_138.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_139,psoriasis/ps_139.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_140,psoriasis/ps_140.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_141,psoriasis/ps_141.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_142,psoriasis/ps_142.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_143,psoriasis/ps_143.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_144,psoriasis/ps_144.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_145,psoriasis/ps_145.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_146,psoriasis/ps_146.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_147,psoriasis/ps_147.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_148,psoriasis/ps_148.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_149,psoriasis/ps_149.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_150,psoriasis/ps_150.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_151,psoriasis/ps_151.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_152,psoriasis/ps_152.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_153,psoriasis/ps_153.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_154,psoriasis/ps_154.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_155,psoriasis/ps_155.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_156,psoriasis/ps_156.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_157,psoriasis/ps_157.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_158,psoriasis/ps_158.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_159,psoriasis/ps_159.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_160,psoriasis/ps_160.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_161,psoriasis/ps_161.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_162,psoriasis/ps_162.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_163,psoriasis/ps_163.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_164,psoriasis/ps_164.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_165,psoriasis/ps_165.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_166,psoriasis/ps_166.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_167,psoriasis/ps_167.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_168,psoriasis/ps_168.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_169,psoriasis/ps_169.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_170,psoriasis/ps_170.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_171,psoriasis/ps_171.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_172,psoriasis/ps_172.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_173,psoriasis/ps_173.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_174,psoriasis/ps_174.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_175,psoriasis/ps_175.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_176,psoriasis/ps_176.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_177,psoriasis/ps_177.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_178,psoriasis/ps_178.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_179,psoriasis/ps_179.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_180,psoriasis/ps_180.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_181,psoriasis/ps_181.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_182,psoriasis/ps_182.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_183,psoriasis/ps_183.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_184,psoriasis/ps_184.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_185,psoriasis/ps_185.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_186,psoriasis/ps_186.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_187,psoriasis/ps_187.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_188,psoriasis/ps_188.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_189,psoriasis/ps_189.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_190,psoriasis/ps_190.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_191,psoriasis/ps_191.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_192,psoriasis/ps_192.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_193,psoriasis/ps_193.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_194,psoriasis/ps_194.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_195,psoriasis/ps_195.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_196,psoriasis/ps_196.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_197,psoriasis/ps_197.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_198,psoriasis/ps_198.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_199,psoriasis/ps_199.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_200,psoriasis/ps_200.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_201,psoriasis/ps_201.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_202,psoriasis/ps_202.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_203,psoriasis/ps_203.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_204,psoriasis/ps_204.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_205,psoriasis/ps_205.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_206,psoriasis/ps_206.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_207,psoriasis/ps_207.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_208,psoriasis/ps_208.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_209,psoriasis/ps_209.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_210,psoriasis/ps_210.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_211,psoriasis/ps_211.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_212,psoriasis/ps_212.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_213,psoriasis/ps_213.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_214,psoriasis/ps_214.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_215,psoriasis/ps_215.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_216,psoriasis/ps_216.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_217,psoriasis/ps_217.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_218,psoriasis/ps_218.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_219,psoriasis/ps_219.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_220,psoriasis/ps_220.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_221,psoriasis/ps_221.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_222,psoriasis/ps_222.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_223,psoriasis/ps_223.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_224,psoriasis/ps_224.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_225,psoriasis/ps_225.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_226,psoriasis/ps_226.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_227,psoriasis/ps_227.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_228,psoriasis/ps_228.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_229,psoriasis/ps_229.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_230,psoriasis/ps_230.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_231,psoriasis/ps_231.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_232,psoriasis/ps_232.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_233,psoriasis/ps_233.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_234,psoriasis/ps_234.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_235,psoriasis/ps_235.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_236,psoriasis/ps_236.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_237,psoriasis/ps_237.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_238,psoriasis/ps_238.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_239,psoriasis/ps_239.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_240,psoriasis/ps_240.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_241,psoriasis/ps_241.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_242,psoriasis/ps_242.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_243,psoriasis/ps_243.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_244,psoriasis/ps_244.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_245,psoriasis/ps_245.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_246,psoriasis/ps_246.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_247,psoriasis/ps_247.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_248,psoriasis/ps_248.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_249,psoriasis/ps_249.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_250,psoriasis/ps_250.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_251,psoriasis/ps_251.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_252,psoriasis/ps_252.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_253,psoriasis/ps_253.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_254,psoriasis/ps_254.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_255,psoriasis/ps_255.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_256,psoriasis/ps_256.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_257,psoriasis/ps_257.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_258,psoriasis/ps_258.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_259,psoriasis/ps_259.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_260,psoriasis/ps_260.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_261,psoriasis/ps_261.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_262,psoriasis/ps_262.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_263,psoriasis/ps_263.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_264,psoriasis/ps_264.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_265,psoriasis/ps_265.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_266,psoriasis/ps_266.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_267,psoriasis/ps_267.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_268,psoriasis/ps_268.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_269,psoriasis/ps_269.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_270,psoriasis/ps_270.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_271,psoriasis/ps_271.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_272,psoriasis/ps_272.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_273,psoriasis/ps_273.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_274,psoriasis/ps_274.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_275,psoriasis/ps_275.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_276,psoriasis/ps_276.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_277,psoriasis/ps_277.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_278,psoriasis/ps_278.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_279,psoriasis/ps_279.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_280,psoriasis/ps_280.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_281,psoriasis/ps_281.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_282,psoriasis/ps_282.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_283,psoriasis/ps_283.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_284,psoriasis/ps_284.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_285,psoriasis/ps_285.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_286,psoriasis/ps_286.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_287,psoriasis/ps_287.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_288,psoriasis/ps_288.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_289,psoriasis/ps_289.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_290,psoriasis/ps_290.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_291,psoriasis/ps_291.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_292,psoriasis/ps_292.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_293,psoriasis/ps_293.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_294,psoriasis/ps_294.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_295,psoriasis/ps_295.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_296,psoriasis/ps_296.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_297,psoriasis/ps_297.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_298,psoriasis/ps_298.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_299,psoriasis/ps_299.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_300,psoriasis/ps_300.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_301,psoriasis/ps_301.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_302,psoriasis/ps_302.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_303,psoriasis/ps_303.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_304,psoriasis/ps_304.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_305,psoriasis/ps_305.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_306,psoriasis/ps_306.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_307,psoriasis/ps_307.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_308,psoriasis/ps_308.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_309,psoriasis/ps_309.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_310,psoriasis/ps_310.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_311,psoriasis/ps_311.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_312,psoriasis/ps_312.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_313,psoriasis/ps_313.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_314,psoriasis/ps_314.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_315,psoriasis/ps_315.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_316,psoriasis/ps_316.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_317,psoriasis/ps_317.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_318,psoriasis/ps_318.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_319,psoriasis/ps_319.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_320,psoriasis/ps_320.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_321,psoriasis/ps_321.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_322,psoriasis/ps_322.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_323,psoriasis/ps_323.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_324,psoriasis/ps_324.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_325,psoriasis/ps_325.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_326,psoriasis/ps_326.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_327,psoriasis/ps_327.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_328,psoriasis/ps_328.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_329,psoriasis/ps_329.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_330,psoriasis/ps_330.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_331,psoriasis/ps_331.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_332,psoriasis/ps_332.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_333,psoriasis/ps_333.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_334,psoriasis/ps_334.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_335,psoriasis/ps_335.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_336,psoriasis/ps_336.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_337,psoriasis/ps_337.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_338,psoriasis/ps_338.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_339,psoriasis/ps_339.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_340,psoriasis/ps_340.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_341,psoriasis/ps_341.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_342,psoriasis/ps_342.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_343,psoriasis/ps_343.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_344,psoriasis/ps_344.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_345,psoriasis/ps_345.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_346,psoriasis/ps_346.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_347,psoriasis/ps_347.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_348,psoriasis/ps_348.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_349,psoriasis/ps_349.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_350,psoriasis/ps_350.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_351,psoriasis/ps_351.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_352,psoriasis/ps_352.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_353,psoriasis/ps_353.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_354,psoriasis/ps_354.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_355,psoriasis/ps_355.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_356,psoriasis/ps_356.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_357,psoriasis/ps_357.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_358,psoriasis/ps_358.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_359,psoriasis/ps_359.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_360,psoriasis/ps_360.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_361,psoriasis/ps_361.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_362,psoriasis/ps_362.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_363,psoriasis/ps_363.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_364,psoriasis/ps_364.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_365,psoriasis/ps_365.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_366,psoriasis/ps_366.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_367,psoriasis/ps_367.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_368,psoriasis/ps_368.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_369,psoriasis/ps_369.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_370,psoriasis/ps_370.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_371,psoriasis/ps_371.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_372,psoriasis/ps_372.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_373,psoriasis/ps_373.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_374,psoriasis/ps_374.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_375,psoriasis/ps_375.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_376,psoriasis/ps_376.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_377,psoriasis/ps_377.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_378,psoriasis/ps_378.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_379,psoriasis/ps_379.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_380,psoriasis/ps_380.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_381,psoriasis/ps_381.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_382,psoriasis/ps_382.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_383,psoriasis/ps_383.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_384,psoriasis/ps_384.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_385,psoriasis/ps_385.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_386,psoriasis/ps_386.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_387,psoriasis/ps_387.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_388,psoriasis/ps_388.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_389,psoriasis/ps_389.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_390,psoriasis/ps_390.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_391,psoriasis/ps_391.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_392,psoriasis/ps_392.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_393,psoriasis/ps_393.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_394,psoriasis/ps_394.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_395,psoriasis/ps_395.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_396,psoriasis/ps_396.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_397,psoriasis/ps_397.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_398,psoriasis/ps_398.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_399,psoriasis/ps_399.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_400,psoriasis/ps_400.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_401,psoriasis/ps_401.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_402,psoriasis/ps_402.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_403,psoriasis/ps_403.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_404,psoriasis/ps_404.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_405,psoriasis/ps_405.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+ps_406,psoriasis/ps_406.jpg,psoriasis,Kaggle,clinical_photo,light,fair_use_academic,,,multiple_unspecified
+nps_001,non_psoriasis/nps_001.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_002,non_psoriasis/nps_002.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_003,non_psoriasis/nps_003.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_004,non_psoriasis/nps_004.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_005,non_psoriasis/nps_005.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_006,non_psoriasis/nps_006.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_007,non_psoriasis/nps_007.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_008,non_psoriasis/nps_008.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_009,non_psoriasis/nps_009.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_010,non_psoriasis/nps_010.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_011,non_psoriasis/nps_011.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_012,non_psoriasis/nps_012.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_013,non_psoriasis/nps_013.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_014,non_psoriasis/nps_014.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_015,non_psoriasis/nps_015.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_016,non_psoriasis/nps_016.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_017,non_psoriasis/nps_017.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_018,non_psoriasis/nps_018.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_019,non_psoriasis/nps_019.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_020,non_psoriasis/nps_020.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_021,non_psoriasis/nps_021.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_022,non_psoriasis/nps_022.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_023,non_psoriasis/nps_023.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_024,non_psoriasis/nps_024.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_025,non_psoriasis/nps_025.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_026,non_psoriasis/nps_026.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_027,non_psoriasis/nps_027.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_028,non_psoriasis/nps_028.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_029,non_psoriasis/nps_029.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_030,non_psoriasis/nps_030.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_031,non_psoriasis/nps_031.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_032,non_psoriasis/nps_032.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_033,non_psoriasis/nps_033.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_034,non_psoriasis/nps_034.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_035,non_psoriasis/nps_035.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_036,non_psoriasis/nps_036.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_037,non_psoriasis/nps_037.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_038,non_psoriasis/nps_038.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_039,non_psoriasis/nps_039.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_040,non_psoriasis/nps_040.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_041,non_psoriasis/nps_041.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_042,non_psoriasis/nps_042.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_043,non_psoriasis/nps_043.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_044,non_psoriasis/nps_044.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_045,non_psoriasis/nps_045.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_046,non_psoriasis/nps_046.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_047,non_psoriasis/nps_047.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_048,non_psoriasis/nps_048.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_049,non_psoriasis/nps_049.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_050,non_psoriasis/nps_050.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,acne,,not_specified
+nps_051,non_psoriasis/nps_051.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_052,non_psoriasis/nps_052.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_053,non_psoriasis/nps_053.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_054,non_psoriasis/nps_054.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_055,non_psoriasis/nps_055.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_056,non_psoriasis/nps_056.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_057,non_psoriasis/nps_057.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_058,non_psoriasis/nps_058.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_059,non_psoriasis/nps_059.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_060,non_psoriasis/nps_060.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_061,non_psoriasis/nps_061.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_062,non_psoriasis/nps_062.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_063,non_psoriasis/nps_063.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_064,non_psoriasis/nps_064.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_065,non_psoriasis/nps_065.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_066,non_psoriasis/nps_066.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_067,non_psoriasis/nps_067.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_068,non_psoriasis/nps_068.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_069,non_psoriasis/nps_069.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_070,non_psoriasis/nps_070.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_071,non_psoriasis/nps_071.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_072,non_psoriasis/nps_072.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_073,non_psoriasis/nps_073.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_074,non_psoriasis/nps_074.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_075,non_psoriasis/nps_075.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_076,non_psoriasis/nps_076.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_077,non_psoriasis/nps_077.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_078,non_psoriasis/nps_078.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_079,non_psoriasis/nps_079.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_080,non_psoriasis/nps_080.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_081,non_psoriasis/nps_081.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_082,non_psoriasis/nps_082.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_083,non_psoriasis/nps_083.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_084,non_psoriasis/nps_084.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_085,non_psoriasis/nps_085.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_086,non_psoriasis/nps_086.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_087,non_psoriasis/nps_087.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_088,non_psoriasis/nps_088.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_089,non_psoriasis/nps_089.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_090,non_psoriasis/nps_090.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_091,non_psoriasis/nps_091.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_092,non_psoriasis/nps_092.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_093,non_psoriasis/nps_093.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_094,non_psoriasis/nps_094.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_095,non_psoriasis/nps_095.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_096,non_psoriasis/nps_096.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_097,non_psoriasis/nps_097.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_098,non_psoriasis/nps_098.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_099,non_psoriasis/nps_099.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_100,non_psoriasis/nps_100.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,melanoma,,not_specified
+nps_101,non_psoriasis/nps_101.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_102,non_psoriasis/nps_102.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_103,non_psoriasis/nps_103.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_104,non_psoriasis/nps_104.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_105,non_psoriasis/nps_105.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_106,non_psoriasis/nps_106.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_107,non_psoriasis/nps_107.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_108,non_psoriasis/nps_108.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_109,non_psoriasis/nps_109.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_110,non_psoriasis/nps_110.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_111,non_psoriasis/nps_111.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_112,non_psoriasis/nps_112.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_113,non_psoriasis/nps_113.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_114,non_psoriasis/nps_114.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_115,non_psoriasis/nps_115.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_116,non_psoriasis/nps_116.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_117,non_psoriasis/nps_117.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_118,non_psoriasis/nps_118.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_119,non_psoriasis/nps_119.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_120,non_psoriasis/nps_120.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_121,non_psoriasis/nps_121.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_122,non_psoriasis/nps_122.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_123,non_psoriasis/nps_123.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_124,non_psoriasis/nps_124.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_125,non_psoriasis/nps_125.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_126,non_psoriasis/nps_126.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_127,non_psoriasis/nps_127.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_128,non_psoriasis/nps_128.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_129,non_psoriasis/nps_129.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_130,non_psoriasis/nps_130.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_131,non_psoriasis/nps_131.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_132,non_psoriasis/nps_132.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_133,non_psoriasis/nps_133.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_134,non_psoriasis/nps_134.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_135,non_psoriasis/nps_135.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_136,non_psoriasis/nps_136.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_137,non_psoriasis/nps_137.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_138,non_psoriasis/nps_138.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_139,non_psoriasis/nps_139.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_140,non_psoriasis/nps_140.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_141,non_psoriasis/nps_141.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_142,non_psoriasis/nps_142.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_143,non_psoriasis/nps_143.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_144,non_psoriasis/nps_144.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_145,non_psoriasis/nps_145.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_146,non_psoriasis/nps_146.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_147,non_psoriasis/nps_147.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_148,non_psoriasis/nps_148.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_149,non_psoriasis/nps_149.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_150,non_psoriasis/nps_150.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_151,non_psoriasis/nps_151.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,scabies,,not_specified
+nps_152,non_psoriasis/nps_152.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_153,non_psoriasis/nps_153.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_154,non_psoriasis/nps_154.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_155,non_psoriasis/nps_155.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_156,non_psoriasis/nps_156.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_157,non_psoriasis/nps_157.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_158,non_psoriasis/nps_158.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_159,non_psoriasis/nps_159.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_160,non_psoriasis/nps_160.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_161,non_psoriasis/nps_161.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_162,non_psoriasis/nps_162.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_163,non_psoriasis/nps_163.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_164,non_psoriasis/nps_164.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_165,non_psoriasis/nps_165.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_166,non_psoriasis/nps_166.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_167,non_psoriasis/nps_167.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_168,non_psoriasis/nps_168.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_169,non_psoriasis/nps_169.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_170,non_psoriasis/nps_170.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_171,non_psoriasis/nps_171.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_172,non_psoriasis/nps_172.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_173,non_psoriasis/nps_173.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_174,non_psoriasis/nps_174.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_175,non_psoriasis/nps_175.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_176,non_psoriasis/nps_176.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_177,non_psoriasis/nps_177.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_178,non_psoriasis/nps_178.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_179,non_psoriasis/nps_179.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_180,non_psoriasis/nps_180.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_181,non_psoriasis/nps_181.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_182,non_psoriasis/nps_182.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_183,non_psoriasis/nps_183.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_184,non_psoriasis/nps_184.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_185,non_psoriasis/nps_185.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_186,non_psoriasis/nps_186.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_187,non_psoriasis/nps_187.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_188,non_psoriasis/nps_188.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_189,non_psoriasis/nps_189.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_190,non_psoriasis/nps_190.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_191,non_psoriasis/nps_191.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_192,non_psoriasis/nps_192.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_193,non_psoriasis/nps_193.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_194,non_psoriasis/nps_194.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_195,non_psoriasis/nps_195.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_196,non_psoriasis/nps_196.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_197,non_psoriasis/nps_197.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_198,non_psoriasis/nps_198.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_199,non_psoriasis/nps_199.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_200,non_psoriasis/nps_200.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_201,non_psoriasis/nps_201.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,eczema,,not_specified
+nps_202,non_psoriasis/nps_202.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_203,non_psoriasis/nps_203.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_204,non_psoriasis/nps_204.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_205,non_psoriasis/nps_205.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_206,non_psoriasis/nps_206.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_207,non_psoriasis/nps_207.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_208,non_psoriasis/nps_208.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_209,non_psoriasis/nps_209.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_210,non_psoriasis/nps_210.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_211,non_psoriasis/nps_211.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_212,non_psoriasis/nps_212.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_213,non_psoriasis/nps_213.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_214,non_psoriasis/nps_214.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_215,non_psoriasis/nps_215.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_216,non_psoriasis/nps_216.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_217,non_psoriasis/nps_217.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_218,non_psoriasis/nps_218.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_219,non_psoriasis/nps_219.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_220,non_psoriasis/nps_220.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_221,non_psoriasis/nps_221.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_222,non_psoriasis/nps_222.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_223,non_psoriasis/nps_223.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_224,non_psoriasis/nps_224.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_225,non_psoriasis/nps_225.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_226,non_psoriasis/nps_226.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_227,non_psoriasis/nps_227.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_228,non_psoriasis/nps_228.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_229,non_psoriasis/nps_229.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_230,non_psoriasis/nps_230.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_231,non_psoriasis/nps_231.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_232,non_psoriasis/nps_232.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_233,non_psoriasis/nps_233.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_234,non_psoriasis/nps_234.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_235,non_psoriasis/nps_235.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_236,non_psoriasis/nps_236.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_237,non_psoriasis/nps_237.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_238,non_psoriasis/nps_238.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_239,non_psoriasis/nps_239.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_240,non_psoriasis/nps_240.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_241,non_psoriasis/nps_241.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_242,non_psoriasis/nps_242.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_243,non_psoriasis/nps_243.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_244,non_psoriasis/nps_244.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_245,non_psoriasis/nps_245.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_246,non_psoriasis/nps_246.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_247,non_psoriasis/nps_247.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_248,non_psoriasis/nps_248.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_249,non_psoriasis/nps_249.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_250,non_psoriasis/nps_250.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_251,non_psoriasis/nps_251.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,light diseases,,not_specified
+nps_252,non_psoriasis/nps_252.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_253,non_psoriasis/nps_253.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_254,non_psoriasis/nps_254.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_255,non_psoriasis/nps_255.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_256,non_psoriasis/nps_256.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_257,non_psoriasis/nps_257.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_258,non_psoriasis/nps_258.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_259,non_psoriasis/nps_259.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_260,non_psoriasis/nps_260.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_261,non_psoriasis/nps_261.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_262,non_psoriasis/nps_262.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_263,non_psoriasis/nps_263.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_264,non_psoriasis/nps_264.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_265,non_psoriasis/nps_265.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_266,non_psoriasis/nps_266.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_267,non_psoriasis/nps_267.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_268,non_psoriasis/nps_268.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_269,non_psoriasis/nps_269.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_270,non_psoriasis/nps_270.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_271,non_psoriasis/nps_271.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_272,non_psoriasis/nps_272.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_273,non_psoriasis/nps_273.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_274,non_psoriasis/nps_274.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_275,non_psoriasis/nps_275.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_276,non_psoriasis/nps_276.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_277,non_psoriasis/nps_277.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_278,non_psoriasis/nps_278.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_279,non_psoriasis/nps_279.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_280,non_psoriasis/nps_280.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_281,non_psoriasis/nps_281.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_282,non_psoriasis/nps_282.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_283,non_psoriasis/nps_283.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_284,non_psoriasis/nps_284.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_285,non_psoriasis/nps_285.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_286,non_psoriasis/nps_286.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_287,non_psoriasis/nps_287.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_288,non_psoriasis/nps_288.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_289,non_psoriasis/nps_289.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_290,non_psoriasis/nps_290.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_291,non_psoriasis/nps_291.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_292,non_psoriasis/nps_292.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_293,non_psoriasis/nps_293.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_294,non_psoriasis/nps_294.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_295,non_psoriasis/nps_295.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_296,non_psoriasis/nps_296.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_297,non_psoriasis/nps_297.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_298,non_psoriasis/nps_298.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_299,non_psoriasis/nps_299.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_300,non_psoriasis/nps_300.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_301,non_psoriasis/nps_301.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,cellulitis,,not_specified
+nps_302,non_psoriasis/nps_302.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_303,non_psoriasis/nps_303.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_304,non_psoriasis/nps_304.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_305,non_psoriasis/nps_305.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_306,non_psoriasis/nps_306.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_307,non_psoriasis/nps_307.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_308,non_psoriasis/nps_308.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_309,non_psoriasis/nps_309.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_310,non_psoriasis/nps_310.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_311,non_psoriasis/nps_311.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_312,non_psoriasis/nps_312.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_313,non_psoriasis/nps_313.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_314,non_psoriasis/nps_314.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_315,non_psoriasis/nps_315.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_316,non_psoriasis/nps_316.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_317,non_psoriasis/nps_317.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_318,non_psoriasis/nps_318.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_319,non_psoriasis/nps_319.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_320,non_psoriasis/nps_320.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_321,non_psoriasis/nps_321.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_322,non_psoriasis/nps_322.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_323,non_psoriasis/nps_323.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_324,non_psoriasis/nps_324.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_325,non_psoriasis/nps_325.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_326,non_psoriasis/nps_326.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_327,non_psoriasis/nps_327.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_328,non_psoriasis/nps_328.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_329,non_psoriasis/nps_329.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_330,non_psoriasis/nps_330.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_331,non_psoriasis/nps_331.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_332,non_psoriasis/nps_332.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_333,non_psoriasis/nps_333.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_334,non_psoriasis/nps_334.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_335,non_psoriasis/nps_335.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_336,non_psoriasis/nps_336.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_337,non_psoriasis/nps_337.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_338,non_psoriasis/nps_338.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_339,non_psoriasis/nps_339.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_340,non_psoriasis/nps_340.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_341,non_psoriasis/nps_341.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_342,non_psoriasis/nps_342.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_343,non_psoriasis/nps_343.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_344,non_psoriasis/nps_344.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_345,non_psoriasis/nps_345.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_346,non_psoriasis/nps_346.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_347,non_psoriasis/nps_347.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_348,non_psoriasis/nps_348.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_349,non_psoriasis/nps_349.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_350,non_psoriasis/nps_350.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_351,non_psoriasis/nps_351.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,nail fungus,,not_specified
+nps_352,non_psoriasis/nps_352.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,warts,,not_specified
+nps_353,non_psoriasis/nps_353.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,warts,,not_specified
+nps_354,non_psoriasis/nps_354.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,warts,,not_specified
+nps_355,non_psoriasis/nps_355.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,warts,,not_specified
+nps_356,non_psoriasis/nps_356.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,warts,,not_specified
+nps_357,non_psoriasis/nps_357.jpg,non-psoriasis,external_collection,clinical_photo,mixed,fair_use_academic,warts,,not_specified
+ 

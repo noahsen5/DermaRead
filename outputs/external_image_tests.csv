@@ -1,0 +1,3 @@
+image_path,true_label,source,notes,model_version,predicted_label,confidence,psoriasis_probability,non_psoriasis_probability,ood_suspected
+C:/path/to/your/psoriasis_photo.jpg,psoriasis,smartphone_photo,Clinical photo taken under natural light,,,,,,
+C:/path/to/your/non_psoriasis_photo.jpg,non-psoriasis,smartphone_photo,Normal skin under indoor lighting,,,,,,

@@ -1,0 +1,4 @@
+- Not a diagnostic tool; include mandatory disclaimer in UI.
+- Data: only use images with explicit permission/licensing; store no PII.
+- Bias: track performance across skin tones; document limitations.
+- Transparency: provide model card + Grad-CAM explanations.
