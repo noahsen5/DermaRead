@@ -26,7 +26,6 @@ from PIL import Image
 from models.skin_tone_ita import _skin_mask  # single authoritative skin detector
 
 
-# ── Lesion detection within skin pixels ──────
 def _lesion_mask(rgb: np.ndarray, skin: np.ndarray) -> np.ndarray:
     """
     Within skin pixels, flag those with inflammatory (high-saturation red)
@@ -46,7 +45,6 @@ def _lesion_mask(rgb: np.ndarray, skin: np.ndarray) -> np.ndarray:
     return inflamed | scaly
 
 
-# ── Texture analysis ──────
 def _texture_roughness(rgb: np.ndarray, mask: np.ndarray, window: int = 5) -> float:
     """
     Local standard deviation of lightness within masked pixels.
@@ -73,7 +71,6 @@ def _texture_roughness(rgb: np.ndarray, mask: np.ndarray, window: int = 5) -> fl
     return float(np.clip(raw / 35.0, 0.0, 1.0))
 
 
-# ── Erythema index ─────────
 def _erythema_index(rgb: np.ndarray, lesion: np.ndarray, skin: np.ndarray) -> float:
     """
     Ratio of redness in lesion pixels vs. surrounding skin pixels.
@@ -96,8 +93,6 @@ def _erythema_index(rgb: np.ndarray, lesion: np.ndarray, skin: np.ndarray) -> fl
     return float(np.clip(excess / 0.15, 0.0, 1.0))
 
 
-# ── Composite severity label ────
-
 def _composite_label(coverage: float, erythema: float, texture: float) -> str:
     score = (coverage / 100) * 0.5 + erythema * 0.3 + texture * 0.2
     if score < 0.25:
@@ -106,8 +101,6 @@ def _composite_label(coverage: float, erythema: float, texture: float) -> str:
         return "Moderate"
     return "Severe"
 
-
-# ── Public API ────────
 
 def estimate_visual_severity(pil_image: Image.Image) -> dict:
     """
@@ -150,7 +143,6 @@ def estimate_visual_severity(pil_image: Image.Image) -> dict:
     }
 
 
-# ── Body part clinical context ───────
 BODY_PARTS = [
     "Not specified",
     "Scalp",
